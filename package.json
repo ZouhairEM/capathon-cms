@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "next": "^15.2.4",
+    "prettier": "^3.5.3",
     "primeicons": "^7.0.0",
     "primereact": "^10.9.3",
     "react": "^18.3.1",

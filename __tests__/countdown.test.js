@@ -1,24 +1,24 @@
 import React from "react";
 import {render, screen, act} from "@testing-library/react";
-import Countdown from "../src/app/ui/countdown";
+import Countdown from "../src/app/ui/Countdown";
 import "@testing-library/jest-dom";
 
 jest.useFakeTimers();
 
 describe("Countdown component", () => {
-    test("renders countdown with initial valuea", () => {
+    test("renders countdown with initial values", () => {
         render(<Countdown />);
 
-        expect(screen.getByText(/days/i)).toBeInTheDocument();
-        expect(screen.getByText(/hours/i)).toBeInTheDocument();
-        expect(screen.getByText(/minutes/i)).toBeInTheDocument();
-        expect(screen.getByText(/seconds/i)).toBeInTheDocument();
+        expect(screen.getByText(/Days/i)).toBeInTheDocument();
+        expect(screen.getByText(/Hours/i)).toBeInTheDocument();
+        expect(screen.getByText(/Minutes/i)).toBeInTheDocument();
+        expect(screen.getByText(/Seconds/i)).toBeInTheDocument();
     })
 
     test("updates countdown over time", () => {
         render(<Countdown />);
 
-        const secondsElement = screen.getByText("seconds").previousSibling;
+        const secondsElement = screen.getByText("Seconds").previousSibling;
         const initialSeconds = Number(secondsElement.textContent);
 
         act(() => {
@@ -45,7 +45,7 @@ describe("Countdown component", () => {
         });
     })
 
-    test("clears interval when onmounting", () => {
+    test("clears interval when unmounting", () => {
         const clearIntervalMock = jest.spyOn(global, 'clearInterval');
 
         const {unmount} = render(<Countdown />);

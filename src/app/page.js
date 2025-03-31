@@ -1,10 +1,8 @@
-import { Button } from "primereact/button"; 
-import Countdown from "./ui/countdown";
+import Countdown from "./ui/Countdown";
 
 export default function Home() {
   return (
    <div>
-      <h1>Hello Capathon!</h1>
       <Countdown />
    </div>
   );
