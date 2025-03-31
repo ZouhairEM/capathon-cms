@@ -1,3 +1,9 @@
+## [0.1.4] - 2025-03-31  
+### Added  
+- Installed JSON Server.  
+- Created `db.json`.  
+- Added script to `package.json` for running JSON Server. 
+
 ## [0.1.3] - 2015-03-24 
 ### Added 
 - Typescript config file.
