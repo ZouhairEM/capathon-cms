@@ -1,11 +1,10 @@
-import { Button } from "primereact/button"; 
+import Accordion from "../../ui/faq.jsx";
 
 export default function Home() {
   return (
-   <div>
+    <div>
       <h1>Hello Capathon!</h1>
-      <Button label="Click Me" />
-   </div>
+      <Accordion />
+    </div>
   );
 }
-
