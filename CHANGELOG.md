@@ -1,3 +1,13 @@
+## [0.1.4] - 2025-03-31  
+### Added  
+- Implemented countdown component for event timer.  
+- Styled countdown with a blue theme for better visual appeal.  
+- Created `countdown.test.js` to verify countdown functionality.  
+
+## [0.1.3] - 2015-03-24 
+### Added 
+- Typescript config file.
+
 ## [0.1.2] - 2025-03-27
 ### Added
 - Added and configured Jest test for component functionality.
