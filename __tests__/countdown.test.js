@@ -1,6 +1,6 @@
 import React from "react";
 import {render, screen, act} from "@testing-library/react";
-import Countdown from "../src/app/ui/Countdown";
+import Countdown from "../ui/countdown";
 import "@testing-library/jest-dom";
 
 jest.useFakeTimers();
