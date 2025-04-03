@@ -1,8 +1,10 @@
 ## [0.1.6] - 2025-04-03
-### Added  
-- Installed JSON Server.  
-- Created `db.json`.  
-- Added script to `package.json` for running JSON Server. 
+
+### Added
+
+- Installed JSON Server.
+- Created `db.json`.
+- Added script to `package.json` for running JSON Server.
 - Added .env file for environment variables.
 - Created config.js with API URL to be fetched.
 
