@@ -2,9 +2,8 @@ import Countdown from "./ui/Countdown";
 
 export default function Home() {
   return (
-   <div>
+    <div>
       <Countdown />
-   </div>
+    </div>
   );
 }
-
