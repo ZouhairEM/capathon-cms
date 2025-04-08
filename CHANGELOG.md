@@ -1,3 +1,14 @@
+## [0.1.7] - 2025-04-08
+
+### Added
+- Configured Cypress for end-to-end testing.
+- Created an E2E test file for the home page.
+- Added a test for the visibility of the countdown component.
+
+### Fixed
+- Resolved hydration error in the `Countdown` component by initializing state with the correct time.
+- Added `endOfLine: "auto"` setting to `eslint.config.mjs` to handle line endings automatically.
+
 ## [0.1.6] - 2025-04-03
 
 ### Added

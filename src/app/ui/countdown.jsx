@@ -21,18 +21,20 @@ const getTimeLeft = () => {
 };
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(countdownTarget));
+  const [timeLeft, setTimeLeft] = useState(getTimeLeft);
+
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(getTimeLeft(countdownTarget));
+      setTimeLeft(getTimeLeft());
     }, 1000);
+
 
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center p-6 bg-blue-100 rounded-lg shadow-lg w-1/2 mx-auto mt-4">
+    <section data-cy="countdown-section" className="flex flex-col items-center justify-center p-6 bg-blue-100 rounded-lg shadow-lg w-1/2 mx-auto mt-4">
       <h2 className="text-2xl font-semibold text-blue-800">
         Time left until the event
       </h2>
