@@ -21,8 +21,7 @@ const getTimeLeft = () => {
 };
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = useState(() => 
-    getTimeLeft(countdownTarget));
+  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(countdownTarget));
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -34,13 +33,18 @@ export default function Countdown() {
 
   return (
     <section className="flex flex-col items-center justify-center p-6 bg-blue-100 rounded-lg shadow-lg w-1/2 mx-auto mt-4">
-      <h2 className="text-2xl font-semibold text-blue-800">Time left until the event</h2>
+      <h2 className="text-2xl font-semibold text-blue-800">
+        Time left until the event
+      </h2>
       <div className="grid grid-cols-4 gap-6 mt-6 mb-5">
         {Object.entries(timeLeft).map((el) => {
           return (
-            <Card className="p-6 text-center bg-blue-700 text-white rounded-lg shadow-lg" key={el[0]}>
-                <div className="text-xl font-bold">{el[1]}</div>
-                <div className="text-lg">{el[0]}</div>
+            <Card
+              className="p-6 text-center bg-blue-700 text-white rounded-lg shadow-lg"
+              key={el[0]}
+            >
+              <div className="text-xl font-bold">{el[1]}</div>
+              <div className="text-lg">{el[0]}</div>
             </Card>
           );
         })}
