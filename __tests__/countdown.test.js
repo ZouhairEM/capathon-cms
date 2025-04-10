@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen, act } from "@testing-library/react";
-import Countdown from "../../src/app/ui/countdown";
+import Countdown from "../src/app/ui/countdown";
+import "@testing-library/jest-dom";
 jest.useFakeTimers();
 
 describe("Countdown component", () => {
@@ -33,7 +34,7 @@ describe("Countdown component", () => {
 
     act(() => {
       jest.advanceTimersByTime(1000 * 60 * 60 * 24 * 365);
-    });
+    })
 
     const timeLeftElements = screen.getAllByText(/\d+/);
 
