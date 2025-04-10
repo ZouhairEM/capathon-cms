@@ -11,7 +11,7 @@ const config = {
   coverageProvider: "v8",
   testEnvironment: "jsdom",
   // Add more setup options before each test is run
-  // setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   coverageThreshold: {
     global: {
       branches: 80,
@@ -31,7 +31,7 @@ const config = {
     "json",
     "node",
   ],
-  testEnvironment: "jsdom",
+  testEnvironment: "@happy-dom/jest-environment",
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest",
   },
