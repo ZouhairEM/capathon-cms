@@ -34,7 +34,7 @@ describe("Countdown component", () => {
     render(<Countdown />);
 
     act(() => {
-      jest.advanceTimersByTime(1000 * 60 * 60 * 24 * 365);
+      jest.advanceTimersByTime(1000 * 60 * 60 * 24 * 100);
     });
 
     const timeLeftElements = screen.getAllByText(/\d+/);
