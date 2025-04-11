@@ -1,3 +1,14 @@
+## [0.1.8] - 2025-04-11
+
+### Added
+
+- Connected the `Countdown` component to fetch dynamic `targetDate` from a local JSON Server.
+- Implemented data fetching in `page.js` using `fetch()`.
+
+### Fixed
+
+- Resolved issues with the countdown test by adding mock date with a static target date.
+
 ## [0.1.7] - 2025-04-08
 
 ### Added
@@ -10,6 +21,7 @@
 
 - Resolved hydration error in the `Countdown` component by initializing state with the correct time.
 - Added `endOfLine: "auto"` setting to `eslint.config.mjs` to handle line endings automatically.
+- Made `Countdown` component first letter uppercase.
 
 ## [0.1.6] - 2025-04-03
 
