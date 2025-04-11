@@ -1,9 +1,13 @@
-## [0.1.8] - 2025-04-10
+## [0.1.8] - 2025-04-11
 
 ### Added
 
 - Connected the `Countdown` component to fetch dynamic `targetDate` from a local JSON Server.
 - Implemented data fetching in `page.js` using `fetch()`.
+
+### Fixed
+
+- Resolved issues with the countdown test by adding mock date with a static target date. 
 
 ## [0.1.7] - 2025-04-08
 

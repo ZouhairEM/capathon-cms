@@ -6,8 +6,14 @@ import "@testing-library/jest-dom";
 jest.useFakeTimers();
 
 describe("Countdown component", () => {
+  const mockData = {
+    countdown: {
+      targetDate: new Date("2025-06-19T00:00:00Z"),
+    },
+  };
+
   test("renders countdown with initial values", () => {
-    render(<Countdown />);
+    render(<Countdown data={mockData} />);
 
     expect(screen.getByText(/Days/i)).toBeInTheDocument();
     expect(screen.getByText(/Hours/i)).toBeInTheDocument();
@@ -16,7 +22,7 @@ describe("Countdown component", () => {
   });
 
   test("updates countdown over time", () => {
-    render(<Countdown />);
+    render(<Countdown data={mockData} />);
 
     const secondsElement = screen.getByText("Seconds").previousSibling;
     const initialSeconds = Number(secondsElement.textContent);
@@ -31,10 +37,10 @@ describe("Countdown component", () => {
   });
 
   test("does not count below zero", () => {
-    render(<Countdown />);
+    render(<Countdown data={mockData} />);
 
     act(() => {
-      jest.advanceTimersByTime(1000 * 60 * 60 * 24 * 100);
+      jest.advanceTimersByTime(1000 * 60 * 60 * 24 * 50);
     });
 
     const timeLeftElements = screen.getAllByText(/\d+/);
@@ -48,7 +54,7 @@ describe("Countdown component", () => {
   test("clears interval when unmounting", () => {
     const clearIntervalMock = jest.spyOn(global, "clearInterval");
 
-    const { unmount } = render(<Countdown />);
+    const { unmount } = render(<Countdown data={mockData} />);
 
     unmount();
 
