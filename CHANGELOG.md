@@ -7,7 +7,7 @@
 
 ### Fixed
 
-- Resolved issues with the countdown test by adding mock date with a static target date. 
+- Resolved issues with the countdown test by adding mock date with a static target date.
 
 ## [0.1.7] - 2025-04-08
 
