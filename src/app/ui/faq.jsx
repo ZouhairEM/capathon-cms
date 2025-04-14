@@ -1,9 +1,12 @@
 import { Accordion, AccordionTab } from "primereact/accordion";
-import React from "react";
-
+//import React from "react";
+//import "primereact/resources/themes/lara-light-indigo/theme.css";
+//import "primereact/resources/primereact.min.css";
+//import "primeicons/primeicons.css";
+   
 export default function Faq() {
   return (
-    <div className="card">
+  
       <Accordion activeIndex={0}>
         <AccordionTab header="I have registered but haven't received a confirmation e-mail yet?">
           <p className="m-0">
@@ -69,6 +72,5 @@ export default function Faq() {
           </p>
         </AccordionTab>
       </Accordion>
-    </div>
   );
 }
