@@ -1,9 +1,7 @@
 import Countdown from "./ui/Countdown";
 
 async function getData() {
-  const res = await fetch("http://localhost:3001/sections", {
-    cache: "force-cache",
-  });
+  const res = await fetch("http://localhost:3001/sections");
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -12,9 +10,7 @@ async function getData() {
 
 export default async function Home() {
   const data = await getData();
-  // console.log(data);
   const countdown = data[0];
-  // console.log(countdownData);
 
   return (
     <div>

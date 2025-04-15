@@ -21,7 +21,6 @@
 
 - Resolved hydration error in the `Countdown` component by initializing state with the correct time.
 - Added `endOfLine: "auto"` setting to `eslint.config.mjs` to handle line endings automatically.
-- Made `Countdown` component first letter uppercase.
 
 ## [0.1.6] - 2025-04-03
 
