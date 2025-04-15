@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div>
       <div>
+        <Countdown />
         <Accordion />
       </div>
     </div>
