@@ -1,4 +1,5 @@
-import Countdown from "./ui/Countdown";
+import Countdown from "./ui/countdown";
+import FaqSection from "./ui/faqSection.jsx";
 
 async function getData() {
   const res = await fetch("http://localhost:3001/sections");
@@ -14,6 +15,7 @@ export default async function Home() {
 
   return (
     <div>
+      <FaqSection />
       <Countdown data={countdown} />
     </div>
   );
