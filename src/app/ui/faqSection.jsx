@@ -1,12 +1,8 @@
 import { Accordion, AccordionTab } from "primereact/accordion";
-//import React from "react";
-//import "primereact/resources/themes/lara-light-indigo/theme.css";
-//import "primereact/resources/primereact.min.css";
-//import "primeicons/primeicons.css";
 
-export default function Faq() {
+export default function FaqSection() {
   return (
-    <Accordion activeIndex={0}>
+    <Accordion>
       <AccordionTab header="I have registered but haven't received a confirmation e-mail yet?">
         <p>
           Our registration form service won't mail a confirmation, it will only

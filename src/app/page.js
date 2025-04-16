@@ -1,12 +1,12 @@
 import Countdown from "./ui/countdown";
-import Accordion from "./ui/faq.jsx";
+import FaqSection from "./ui/faqSection.jsx";
 
 export default function Home() {
   return (
     <div>
       <div>
         <Countdown />
-        <Accordion />
+        <FaqSection />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Faq from "../src/app/ui/faq";
+import Faq from "../src/app/ui/faqSection";
 
 describe("Faq Component", () => {
   test("renders all AccordionTab headers", () => {
