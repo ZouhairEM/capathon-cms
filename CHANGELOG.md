@@ -1,3 +1,15 @@
+## [0.1.8] - 2025-04-16
+
+### Added
+
+- Faq component
+- test for the faq component
+
+### Fixed
+
+- Resolved issues with Tailwing an Reactnative styling
+- Resolved issues with CSS parsing issue
+
 ## [0.1.6] - 2025-04-03
 
 ### Added

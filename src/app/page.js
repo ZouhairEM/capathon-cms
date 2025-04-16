@@ -4,10 +4,8 @@ import FaqSection from "./ui/faqSection.jsx";
 export default function Home() {
   return (
     <div>
-      <div>
-        <Countdown />
-        <FaqSection />
-      </div>
+      <Countdown />
+      <FaqSection />
     </div>
   );
 }
