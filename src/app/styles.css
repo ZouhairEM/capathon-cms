@@ -1,17 +1,8 @@
-@layer tailwind-base, primereact, tailwind-utilities;
-
-/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
-@import "primereact/resources/themes/lara-light-blue/theme.css"
-  layer(primereact);
-
-@layer tailwind-base {
-  @tailwind base;
-}
-
-@layer tailwind-utilities {
-  @tailwind components;
-  @tailwind utilities;
-}
+@layer theme, base, components, primereact, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "primereact/resources/themes/saga-blue/theme.css" layer(primereact);
 
 /* :root {
   --background: #ffffff;
