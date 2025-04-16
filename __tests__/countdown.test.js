@@ -2,6 +2,7 @@ import React from "react";
 import { render, screen, act } from "@testing-library/react";
 import Countdown from "../src/app/ui/countdown";
 import "@testing-library/jest-dom";
+
 jest.useFakeTimers();
 
 describe("Countdown component", () => {

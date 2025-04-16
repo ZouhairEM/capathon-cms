@@ -4,7 +4,7 @@ import FaqSection from "../src/app/ui/faqSection";
 
 describe("FaqSection Component", () => {
   test("renders all AccordionTab headers", () => {
-    render(<Faq />);
+    render(<FaqSection />);
 
     const headers = screen.getAllByRole("button");
 
