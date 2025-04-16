@@ -1,4 +1,4 @@
-## [0.1.8] - 2025-04-16
+## [0.1.9] - 2025-04-16
 
 ### Added
 
@@ -9,6 +9,30 @@
 
 - Resolved issues with Tailwing an Reactnative styling
 - Resolved issues with CSS parsing issue
+
+## [0.1.8] - 2025-04-11
+
+### Added
+
+- Connected the `Countdown` component to fetch dynamic `targetDate` from a local JSON Server.
+- Implemented data fetching in `page.js` using `fetch()`.
+
+### Fixed
+
+- Resolved issues with the countdown test by adding mock date with a static target date.
+
+## [0.1.7] - 2025-04-08
+
+### Added
+
+- Configured Cypress for end-to-end testing.
+- Created an E2E test file for the home page.
+- Added a test for the visibility of the countdown component.
+
+### Fixed
+
+- Resolved hydration error in the `Countdown` component by initializing state with the correct time.
+- Added `endOfLine: "auto"` setting to `eslint.config.mjs` to handle line endings automatically.
 
 ## [0.1.6] - 2025-04-03
 
