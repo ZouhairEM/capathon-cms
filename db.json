@@ -4,6 +4,18 @@
       "countdown": {
         "targetDate": "2025-06-19T17:00:00"
       }
+    },
+    {
+      "navbar": {
+        "dropdownMenu": {
+          "title": "Go to...",
+          "items": [
+            { "title": "Past events" },
+            { "title": "Past events" },
+            { "title": "Past events" }
+          ]
+        }
+      }
     }
   ]
 }
