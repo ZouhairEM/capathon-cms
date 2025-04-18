@@ -1,3 +1,9 @@
+## [0.1.10] - 2025-04-18
+
+### Fixed
+
+- Resolved the issue with lowercase and uppercase component files by explicitly staging and commiting them to Git.
+
 ## [0.1.9] - 2025-04-16
 
 ### Added
