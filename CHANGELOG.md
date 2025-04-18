@@ -1,3 +1,10 @@
+## [0.1.11] - 2025-04-18
+
+### Added
+
+- Basic container styling for the main page in `styles.css`.
+- Responsiveness classes to container styling & `Countdown.jsx`.
+
 ## [0.1.10] - 2025-04-18
 
 ### Fixed
