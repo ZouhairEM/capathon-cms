@@ -46,7 +46,9 @@ export default function Countdown({ data }) {
               className="bg-blue-700 text-white rounded-lg shadow-lg"
               key={timePart[0]}
             >
-              <span className="text-md md:text-xl font-bold block">{timePart[1]}</span>
+              <span className="text-md md:text-xl font-bold block">
+                {timePart[1]}
+              </span>
               <span className="text-sm md:text-lg">{timePart[0]}</span>
             </Card>
           );
