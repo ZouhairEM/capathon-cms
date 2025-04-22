@@ -6,20 +6,11 @@
 
 /* General layout styling */
 body {
-  @apply min-w-sm;
-  @apply max-w-md;
-  @apply sm:max-w-xl;
-  @apply md:max-w-3xl;
-  @apply lg:max-w-5xl;
-  @apply xl:max-w-6xl;
-  @apply m-auto;
+  @apply min-w-sm max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto;
 }
 
 section {
-  @apply mt-16;
-  @apply mb-16;
-  @apply w-full;
-  @apply inline-block;
+  @apply my-16 w-full inline-block;
 }
 /* :root {
   --background: #ffffff;
