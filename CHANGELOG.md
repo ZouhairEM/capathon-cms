@@ -1,3 +1,9 @@
+## [0.1.12] - 2025-04-23
+
+### Added
+
+- Added `navbar.jsx` with a logo, navigation menu, and sign-up button.
+
 ## [0.1.11] - 2025-04-18
 
 ### Added

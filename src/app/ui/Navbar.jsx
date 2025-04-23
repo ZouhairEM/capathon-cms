@@ -1,6 +1,5 @@
 import React from "react";
 import { Menubar } from "primereact/menubar";
-import SignupButton from "./SignupButton";
 
 export default function Navbar({ data }) {
   const items = [
@@ -11,21 +10,24 @@ export default function Navbar({ data }) {
         url: "#", // url: "#past-events" (Remember to add ID to the section)
       })),
     },
+    {
+      label: "Sign Up",
+      url: "https://react.dev", 
+      target: "_blank",
+    },
   ];
 
   const start = (
-    <img src="https://placehold.co/300x60" alt="logo" className="" />
-  );
-  const end = (
-    <div className="flex align-items-center gap-2">
-      <Menubar model={items} />
-      <SignupButton className="bg-white text-blue" />
-    </div>
+    <img src="https://placehold.co/300x60" alt="logo" className="w-32 md:w-48 lg:w-60" />
   );
 
   return (
-    <nav>
-      <Menubar start={start} end={end} className="bg-blue-500" />
+    <nav className="bg-blue-700 flex justify-between items-center p-4">
+      <div className="flex justify-between items-center w-full">
+        {start}
+        <Menubar model={items} className=""/>
+      </div>
+     
     </nav>
   );
 }

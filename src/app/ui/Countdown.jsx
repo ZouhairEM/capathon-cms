@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Card } from "primereact/card";
-import Countdown from "react-countdown";
 
 export default function Countdown({ data }) {
   const countdownTarget = new Date(data.targetDate);
@@ -57,5 +56,4 @@ export default function Countdown({ data }) {
       </div>
     </section>
   );
-
 }
