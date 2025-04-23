@@ -1,6 +1,6 @@
 {
   "name": "capathon-cms",
-  "version": "0.1.7",
+  "version": "0.1.11",
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev --turbopack\" \"npm run local\"",
