@@ -12,22 +12,25 @@ export default function Navbar({ data }) {
     },
     {
       label: "Sign Up",
-      url: "https://react.dev", 
+      url: "https://react.dev",
       target: "_blank",
     },
   ];
 
   const start = (
-    <img src="https://placehold.co/300x60" alt="logo" className="w-32 md:w-48 lg:w-60" />
+    <img
+      src="https://placehold.co/300x60"
+      alt="logo"
+      className="w-32 md:w-48 lg:w-60"
+    />
   );
 
   return (
     <nav className="bg-blue-700 flex justify-between items-center p-4">
       <div className="flex justify-between items-center w-full">
         {start}
-        <Menubar model={items} className=""/>
+        <Menubar model={items} className="" />
       </div>
-     
     </nav>
   );
 }
