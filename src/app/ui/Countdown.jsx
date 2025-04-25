@@ -34,20 +34,22 @@ export default function Countdown({ data }) {
   return (
     <section
       data-cy="countdown-section"
-      className="flex flex-col items-center justify-center p-6 bg-blue-100 rounded-lg shadow-lg w-1/2 mx-auto mt-4"
+      className="text-center p-6 bg-blue-100 rounded-lg shadow-lg"
     >
       <h2 className="text-2xl font-semibold text-blue-800">
         Time left until the event
       </h2>
-      <div className="grid grid-cols-4 gap-6 mt-6 mb-5">
-        {Object.entries(timeLeft).map((el) => {
+      <div className="grid grid-cols-4 gap-2 md:gap-6 mt-6 mb-5 max-w-lg min-w-xs m-auto">
+        {Object.entries(timeLeft).map((timePart) => {
           return (
             <Card
-              className="p-6 text-center bg-blue-700 text-white rounded-lg shadow-lg"
-              key={el[0]}
+              className="bg-blue-700 text-white rounded-lg shadow-lg"
+              key={timePart[0]}
             >
-              <div className="text-xl font-bold">{el[1]}</div>
-              <div className="text-lg">{el[0]}</div>
+              <span className="text-md md:text-xl font-bold block">
+                {timePart[1]}
+              </span>
+              <span className="text-sm md:text-lg">{timePart[0]}</span>
             </Card>
           );
         })}

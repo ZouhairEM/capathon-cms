@@ -4,6 +4,14 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "primereact/resources/themes/saga-blue/theme.css" layer(primereact);
 
+/* General layout styling */
+body {
+  @apply min-w-sm max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto;
+}
+
+section {
+  @apply my-16 w-full inline-block;
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
