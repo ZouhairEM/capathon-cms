@@ -12,7 +12,7 @@ async function getData() {
 export default async function Home() {
   const data = await getData();
   const countdown = data[0];
-  const faqs = data[0].faqSection.faqs;
+  const { faqs } = data[0].faqSection;
 
   return (
     <div>
