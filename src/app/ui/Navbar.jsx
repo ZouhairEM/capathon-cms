@@ -18,12 +18,15 @@ export default function Navbar({ data }) {
   ];
 
   return (
-    <Menubar
+    <nav>
+      <Menubar
       model={items}
       start={
         <img src={data.logo.url} alt="logo" className="w-32 md:w-48 lg:w-60" />
       }
       className="w-full flex justify-between bg-blue-700"
     />
+    </nav>
+   
   );
 }
