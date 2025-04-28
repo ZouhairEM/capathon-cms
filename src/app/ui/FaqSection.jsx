@@ -7,9 +7,9 @@ export default function FaqSection({ faqs }) {
   return (
     <section>
       <Accordion>
-        {faqs.map((item, index) => (
-          <AccordionTab header={item.header} key={index}>
-            <p>{item.answer}</p>
+        {faqs.map((faq) => (
+          <AccordionTab header={faq.header} key={faq.header}>
+            <p>{faq.answer}</p>
           </AccordionTab>
         ))}
       </Accordion>
