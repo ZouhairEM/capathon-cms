@@ -1,22 +1,18 @@
 import Countdown from "./ui/Countdown";
 import FaqSection from "./ui/FaqSection.jsx";
-
-async function getData() {
-  const res = await fetch("http://localhost:3001/sections");
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return res.json();
-}
+import { getData } from "./service/FetchData";
+import Navbar from "./ui/Navbar";
 
 export default async function Home() {
   const data = await getData();
-  const countdown = data[0];
+  const [countdownData] = data.sections;
+  const { navbar } = data;
 
   return (
     <div>
+      <Navbar data={navbar} />
       <FaqSection />
-      <Countdown data={countdown} />
+      <Countdown data={countdownData.countdown} />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Card } from "primereact/card";
 
 export default function Countdown({ data }) {
-  const countdownTarget = new Date(data.countdown.targetDate);
+  const countdownTarget = new Date(data.targetDate);
 
   const getTimeLeft = () => {
     const now = new Date();
