@@ -1,6 +1,6 @@
 import Countdown from "./ui/Countdown";
 import FaqSection from "./ui/FaqSection.jsx";
-import { getData } from "./ui/FetchData";
+import { getData } from "./service/FetchData";
 import Navbar from "./ui/Navbar";
 
 export default async function Home() {
