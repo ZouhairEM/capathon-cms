@@ -4,7 +4,6 @@ import SignupSection from "./ui/SignupSection";
 import Navbar from "./ui/Navbar";
 import { getData } from "./service/FetchData";
 
-
 // export default async function Home() {
 //   const data = await getData();
 //   const countdown = data[0];
