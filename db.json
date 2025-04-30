@@ -1,14 +1,32 @@
 {
-  "sections": [
-    {
-      "countdown": {
-        "targetDate": "2025-06-19T17:00:00"
+  "data": {
+    "navbar": {
+      "dropdownMenu": {
+        "title": "Go to...",
+        "items": [
+          { "title": "Past events" },
+          { "title": "Past events" },
+          { "title": "Past events" }
+        ]
+      },
+      "signupButton": {
+        "url": "https://react.dev"
+      },
+      "logo": {
+        "url": "https://placehold.co/300x60"
       }
+    },
+    "sections": [
+      {
+        "countdown": {
+          "targetDate": "2025-06-19T17:00:00"
+        }
     },
     {
       "signUp": {
         "signUpPossible": true
       }
-    }
-  ]
+      }
+    ]
+  }
 }
