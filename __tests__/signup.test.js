@@ -4,7 +4,15 @@ import SignupSection from "../src/app/ui/SignupSection.jsx";
 
 describe("SignUpSection Component", () => {
   test("renders some content and a button", () => {
-    render(<SignupSection />);
+    const mockData = {
+      content: "Sample content",
+      buttonLabels: {
+        label1: "Sign Up",
+        label2: "Not Available",
+      },
+    };
+
+    render(<SignupSection data={mockData} />);
 
     const content = screen.getAllByRole("paragraph");
     const button = screen.getAllByRole("button");

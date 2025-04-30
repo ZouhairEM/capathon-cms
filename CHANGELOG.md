@@ -1,3 +1,14 @@
+## [0.1.13] - 2025-04-30
+
+### Added
+
+- Added `signupsection.jsx` which includes text and signUp button.
+
+### Fixed
+
+- Changed body to main for semantic html.
+- Added mockdata to `signup.test.js`.
+
 ## [0.1.12] - 2025-04-23
 
 ### Added

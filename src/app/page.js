@@ -4,21 +4,9 @@ import SignupSection from "./ui/SignupSection";
 import Navbar from "./ui/Navbar";
 import { getData } from "./service/FetchData";
 
-// export default async function Home() {
-//   const data = await getData();
-//   const countdown = data[0];
-//   const { signUpPossible } = data[1].signUp;
-
-//   return (
-//     <main>
-//       <FaqSection />
-//       <Countdown data={countdown} />
-//       <SignupSection signUpPossible={signUpPossible} />
-//     </main>
-
 export default async function Home() {
   const data = await getData();
-  const [countdownData, signupData] = data.sections;
+  const [countdownData, signUpData] = data.sections;
   const { navbar } = data;
 
   return (
@@ -27,7 +15,7 @@ export default async function Home() {
       <main>
         <FaqSection />
         <Countdown data={countdownData.countdown} />
-        <SignupSection data={signupData} />
+        <SignupSection data={signUpData.signUp} />
       </main>
     </div>
   );
