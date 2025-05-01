@@ -22,14 +22,14 @@ export default function Countdown({ data }) {
   };
 
   const [timeLeft, setTimeLeft] = useState(getTimeLeft);
-  // const [hydrated, setHydrated] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(getTimeLeft());
     }, 1000);
 
-    // setHydrated(true);
+    setHydrated(true);
 
     return () => clearInterval(timer);
   }, []);
@@ -43,9 +43,9 @@ export default function Countdown({ data }) {
         Time left until the event
       </h2>
       <div className="grid grid-cols-4 gap-2 md:gap-6 mt-6 mb-5 max-w-lg min-w-xs m-auto">
-        {Object.entries(timeLeft).map((timePart) => (
+        {hydrated && Object.entries(timeLeft).map((timePart) => (
           <Card className="bg-blue-700 text-white rounded-lg shadow-lg" key={timePart[0]}>
-            <span className="text-md md:text-xl font-bold block" suppressHydrationWarning={true}>{timePart[1]}</span>
+            <span className="text-md md:text-xl font-bold block">{timePart[1]}</span>
             <span className="text-sm md:text-lg">{timePart[0]}</span>
           </Card>
         ))}

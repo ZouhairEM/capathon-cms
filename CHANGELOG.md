@@ -1,3 +1,9 @@
+## [0.1.x] - 2025-05-xx
+
+### Fixed
+
+- Resolved hydration error in `Countdown.jsx`.
+
 ## [0.1.13] - 2025-04-30
 
 ### Added
