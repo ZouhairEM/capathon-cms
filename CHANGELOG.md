@@ -1,9 +1,15 @@
-## [0.1.12] - 2025-04-25
+## [0.1.13] - 2025-05-1
 
 ### Fixed
 
 - Connected the `FaqSection` component to fetch dynamic header and answer from a local JSON Server.
 - Implemented data fetching in `page.js` using `fetch()`.
+## [0.1.12] - 2025-04-23
+
+### Added
+
+- Added `navbar.jsx` with a logo, navigation menu, and sign-up button.
+- Modularized `GetData()` function
 
 ## [0.1.11] - 2025-04-18
 

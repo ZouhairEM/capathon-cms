@@ -7,9 +7,7 @@ jest.useFakeTimers();
 
 describe("Countdown component", () => {
   const mockData = {
-    countdown: {
-      targetDate: new Date("2025-06-19T00:00:00Z"),
-    },
+    targetDate: new Date("2025-06-19T00:00:00Z"),
   };
 
   test("renders countdown with initial values", () => {
