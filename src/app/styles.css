@@ -5,7 +5,7 @@
 @import "primereact/resources/themes/saga-blue/theme.css" layer(primereact);
 
 /* General layout styling */
-body {
+main {
   @apply min-w-sm max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto;
 }
 

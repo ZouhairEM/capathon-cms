@@ -1,9 +1,21 @@
-## [0.1.13] - 2025-05-1
+## [0.1.14] - 2025-05-2
 
 ### Fixed
 
 - Connected the `FaqSection` component to fetch dynamic header and answer from a local JSON Server.
 - Implemented data fetching in `page.js` using `fetch()`.
+
+## [0.1.13] - 2025-04-30
+
+### Added
+
+- Added `signupsection.jsx` which includes text and signUp button.
+
+### Fixed
+
+- Changed body to main for semantic html.
+- Added mockdata to `signup.test.js`.
+
 ## [0.1.12] - 2025-04-23
 
 ### Added
