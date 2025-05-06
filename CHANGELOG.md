@@ -1,8 +1,15 @@
-## [0.1.x] - 2025-05-xx
+## [0.1.15] - 2025-05-06
 
 ### Fixed
 
 - Resolved hydration error in `Countdown.jsx`.
+
+## [0.1.14] - 2025-05-2
+
+### Fixed
+
+- Connected the `FaqSection` component to fetch dynamic header and answer from a local JSON Server.
+- Implemented data fetching in `page.js` using `fetch()`.
 
 ## [0.1.13] - 2025-04-30
 
