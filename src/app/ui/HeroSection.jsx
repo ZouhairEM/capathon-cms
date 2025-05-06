@@ -27,7 +27,7 @@ export default function HeroSection({ data }) {
 
       <div className="border border-blue-800 flex flex-row">
         {data.highlights.map((items) => (
-          <div key={items.text} >
+          <div key={items.text}>
             <img src={items.icon} alt="icon" />
             <p>{items.text}</p>
           </div>
