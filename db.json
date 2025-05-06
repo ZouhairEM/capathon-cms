@@ -18,8 +18,34 @@
     },
     "sections": [
       {
+        "faqSection": {
+          "faqs": [
+            {
+              "header": "What is the purpose of this FAQ?",
+              "answer": "This FAQ provides answers to common questions."
+            },
+            {
+              "header": "How do I register?",
+              "answer": "You can register by clicking the 'Sign up' button on the homepage."
+            },
+            {
+              "header": "Can I cancel my registration?",
+              "answer": "Yes, you can cancel your registration by contacting support."
+            }
+          ]
+        },
         "countdown": {
           "targetDate": "2025-06-19T17:00:00"
+        }
+      },
+      {
+        "signUp": {
+          "signUpPossible": true,
+          "content": "Did we peak your enthusiasm? Great! You can sign up with your team. Don't have a team yet? Don't worry, we can match you to an awesome team! If the current edition has already started, you can sign up for the next one.",
+          "buttonLabels": {
+            "label1": "Sign up",
+            "label2": "Sign up next year!"
+          }
         }
       }
     ]

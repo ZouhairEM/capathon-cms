@@ -1,20 +1,25 @@
 import Countdown from "./ui/Countdown";
 import FaqSection from "./ui/FaqSection.jsx";
-import { getData } from "./service/FetchData";
+import SignupSection from "./ui/SignupSection";
 import Navbar from "./ui/Navbar";
+import { getData } from "./service/FetchData";
 import OrganiserSection from "./ui/OrganiserSection";
 
 export default async function Home() {
   const data = await getData();
-  const [countdownData] = data.sections;
+  const [countdownData, signUpData] = data.sections;
   const { navbar } = data;
+  const faqs = countdownData.faqSection.faqs
 
   return (
     <div>
       <Navbar data={navbar} />
-      <FaqSection />
-      <Countdown data={countdownData.countdown} />
-      <OrganiserSection />
+      <main>
+        <OrganiserSection />
+        <FaqSection faqs={faqs} />
+        <Countdown data={countdownData.countdown} />
+        <SignupSection data={signUpData.signUp} />
+      </main>
     </div>
   );
 }
