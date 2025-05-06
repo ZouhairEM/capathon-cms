@@ -18,7 +18,38 @@
     },
     "sections": [
       {
-        "faqSection": {
+        "hero": {
+          "titles": {
+            "title1": "CAPATHON",
+            "title2": "The Capgemini",
+            "title3": "HACKATHON"
+          },
+          "date": "19-21st June",
+          "highlights": [
+            {
+              "icon": "",
+              "text": "Hands on experience"
+            },
+            {
+              "icon": "",
+              "text": "Learn new stuff"
+            },
+            {
+              "icon": "",
+              "text": "Make connections"
+            },
+            {
+              "icon": "",
+              "text": "Have fun"
+            },
+            {
+              "icon": "",
+              "text": "And much more!"
+            }
+          ]
+        }
+      },
+      {
           "faqs": [
             {
               "header": "What is the purpose of this FAQ?",
@@ -34,6 +65,7 @@
             }
           ]
         },
+      {
         "countdown": {
           "targetDate": "2025-06-19T17:00:00"
         }
