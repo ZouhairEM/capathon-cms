@@ -18,22 +18,54 @@
     },
     "sections": [
       {
-        "faqSection": {
-          "faqs": [
+        "hero": {
+          "titles": {
+            "title1": "CAPATHON",
+            "title2": "The Capgemini",
+            "title3": "HACKATHON"
+          },
+          "date": "19-21st June",
+          "highlights": [
             {
-              "header": "What is the purpose of this FAQ?",
-              "answer": "This FAQ provides answers to common questions."
+              "icon": "/handsonIcon.png",
+              "text": "Hands on experience"
             },
             {
-              "header": "How do I register?",
-              "answer": "You can register by clicking the 'Sign up' button on the homepage."
+              "icon": "/BrainIcon.png",
+              "text": "Learn new stuff"
             },
             {
-              "header": "Can I cancel my registration?",
-              "answer": "Yes, you can cancel your registration by contacting support."
+              "icon": "/ConnectionIcon.png",
+              "text": "Make connections"
+            },
+            {
+              "icon": "/FunIcon.png",
+              "text": "Have fun"
+            },
+            {
+              "icon": "/DotsIcon.png",
+              "text": "And much more!"
             }
           ]
-        },
+        }
+      },
+      {
+        "faqs": [
+          {
+            "header": "What is the purpose of this FAQ?",
+            "answer": "This FAQ provides answers to common questions."
+          },
+          {
+            "header": "How do I register?",
+            "answer": "You can register by clicking the 'Sign up' button on the homepage."
+          },
+          {
+            "header": "Can I cancel my registration?",
+            "answer": "Yes, you can cancel your registration by contacting support."
+          }
+        ]
+      },
+      {
         "countdown": {
           "targetDate": "2025-06-19T17:00:00"
         }
@@ -51,3 +83,4 @@
     ]
   }
 }
+
