@@ -27,44 +27,44 @@
           "date": "19-21st June",
           "highlights": [
             {
-              "icon": "",
+              "icon": "/handsonIcon.png",
               "text": "Hands on experience"
             },
             {
-              "icon": "",
+              "icon": "/BrainIcon.png",
               "text": "Learn new stuff"
             },
             {
-              "icon": "",
+              "icon": "/ConnectionIcon.png",
               "text": "Make connections"
             },
             {
-              "icon": "",
+              "icon": "/FunIcon.png",
               "text": "Have fun"
             },
             {
-              "icon": "",
+              "icon": "/DotsIcon.png",
               "text": "And much more!"
             }
           ]
         }
       },
       {
-          "faqs": [
-            {
-              "header": "What is the purpose of this FAQ?",
-              "answer": "This FAQ provides answers to common questions."
-            },
-            {
-              "header": "How do I register?",
-              "answer": "You can register by clicking the 'Sign up' button on the homepage."
-            },
-            {
-              "header": "Can I cancel my registration?",
-              "answer": "Yes, you can cancel your registration by contacting support."
-            }
-          ]
-        },
+        "faqs": [
+          {
+            "header": "What is the purpose of this FAQ?",
+            "answer": "This FAQ provides answers to common questions."
+          },
+          {
+            "header": "How do I register?",
+            "answer": "You can register by clicking the 'Sign up' button on the homepage."
+          },
+          {
+            "header": "Can I cancel my registration?",
+            "answer": "Yes, you can cancel your registration by contacting support."
+          }
+        ]
+      },
       {
         "countdown": {
           "targetDate": "2025-06-19T17:00:00"

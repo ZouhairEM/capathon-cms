@@ -8,10 +8,10 @@ export default function HeroSection({ data }) {
           {data.titles.title1}
         </p>
         <p className="self-center text-2xl sm:text-5xl lg:text-6xl mb-8 font-bold">
-        {data.titles.title2}
+          {data.titles.title2}
         </p>
         <p className="self-end text-3xl sm:text-6xl lg:text-8xl font-bold">
-        {data.titles.title3}
+          {data.titles.title3}
         </p>
       </div>
 
@@ -23,21 +23,16 @@ export default function HeroSection({ data }) {
         >
           {data.date}
         </Button>
-
       </div>
 
-      <div className="border border-blue-800">
-      {data.highlights.map((items) => (
-        <div key={items.text}>
-    
-          <p>{items.text}</p>
-          
-        </div>
-      ))}
-
-
+      <div className="border border-blue-800 flex flex-row">
+        {data.highlights.map((items) => (
+          <div key={items.text} >
+            <img src={items.icon} alt="icon" />
+            <p>{items.text}</p>
+          </div>
+        ))}
       </div>
-
     </div>
   );
 }
