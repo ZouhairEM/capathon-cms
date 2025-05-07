@@ -10,15 +10,15 @@ export default function Countdown({ data }) {
     const totalTimeLeft = countdownTarget.getTime() - now.getTime();
 
     if (totalTimeLeft <= 0) {
-      return { Days: 0, Hours: 0, Minutes: 0, Seconds: 0 };
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
 
-    const Days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
-    const Hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
-    const Minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
-    const Seconds = Math.floor((totalTimeLeft / 1000) % 60);
+    const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
+    const seconds = Math.floor((totalTimeLeft / 1000) % 60);
 
-    return { Days, Hours, Minutes, Seconds };
+    return { days, hours, minutes, seconds };
   };
 
   const [timeLeft, setTimeLeft] = useState(getTimeLeft);
