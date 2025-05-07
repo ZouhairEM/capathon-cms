@@ -1,3 +1,9 @@
+## [0.1.16] - 2025-05-07
+
+### Fixed
+
+- Enhanced unit test performance in `countdown.test.js`.
+
 ## [0.1.15] - 2025-05-06
 
 ### Fixed

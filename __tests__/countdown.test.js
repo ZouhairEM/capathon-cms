@@ -20,7 +20,7 @@ describe("Countdown component", () => {
   });
 
   test("should update countdown over time", () => {
-    // Mock the system time and set it to June 6th 2025 
+    // Mock the system time and set it to June 12th 2025 
     jest.setSystemTime(new Date("2025-06-12T00:00:00Z"));
 
     // Render the Countdown component for the first time
