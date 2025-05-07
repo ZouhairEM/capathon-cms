@@ -1,3 +1,9 @@
+## [0.1.16] - 2025-05-07
+
+### Added
+
+- Added `HeroSection.jsx` that renders titles and a highlight section. 
+
 ## [0.1.15] - 2025-05-06
 
 ### Fixed
