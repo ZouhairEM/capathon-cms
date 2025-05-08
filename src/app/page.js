@@ -6,15 +6,14 @@ import { getData } from "./service/FetchData";
 
 export default async function Home() {
   const data = await getData();
-  const [countdownData, signUpData] = data.sections;
+  const [heroData, faqSection, countdownData, signUpData] = data.sections;
   const { navbar } = data;
-  const faqs = countdownData.faqSection.faqs
 
   return (
     <div>
       <Navbar data={navbar} />
       <main>
-        <FaqSection faqs={faqs} />
+        <FaqSection data={faqSection.faqs} />
         <Countdown data={countdownData.countdown} />
         <SignupSection data={signUpData.signUp} />
       </main>
