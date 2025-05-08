@@ -1,3 +1,10 @@
+## [0.1.15] - 2025-05-8
+
+### Fixed
+
+- Fixed the `db.json` structuring
+- Fixed the destructuring in `page.js`
+
 ## [0.1.14] - 2025-05-2
 
 ### Fixed
