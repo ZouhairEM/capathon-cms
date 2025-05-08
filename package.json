@@ -1,17 +1,17 @@
 {
   "name": "capathon-cms",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev --turbopack\" \"npm run local\"",
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write . && next lint",
-    "test": "jest",
     "test:watch": "jest --watch",
     "local": "json-server --watch db.json --port 3001",
     "prepare": "husky",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "ut": "jest"
   },
   "dependencies": {
     "next": "^15.2.4",
