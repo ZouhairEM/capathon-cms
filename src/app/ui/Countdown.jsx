@@ -46,7 +46,7 @@ export default function Countdown({ data }) {
         {hydrated && Object.entries(timeLeft).map((timePart) => (
           <Card className="bg-blue-700 text-white rounded-lg shadow-lg" key={timePart[0]}>
             <span className="text-md md:text-xl font-bold block">{timePart[1]}</span>
-            <span className="text-sm md:text-lg">{timePart[0]}</span>
+            <span className="text-sm md:text-lg capitalize">{timePart[0]}</span>
           </Card>
         ))}
       </div>
