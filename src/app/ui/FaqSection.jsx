@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+// no need to import React here
 import { Accordion, AccordionTab } from "primereact/accordion";
 
 export default function FaqSection({ faqs }) {

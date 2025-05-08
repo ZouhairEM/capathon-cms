@@ -9,8 +9,10 @@ export default async function Home() {
   const [countdownData, signUpData] = data.sections;
   const { navbar } = data;
   const faqs = countdownData.faqSection.faqs
+  // This missing semicolon on line 11 made me think, you can configure prettier to include semicolons as part of the linting, can you look into it?
 
   return (
+    // this div can be replaced with a React fragment
     <div>
       <Navbar data={navbar} />
       <main>
