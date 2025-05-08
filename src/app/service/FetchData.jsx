@@ -5,3 +5,5 @@ export async function getData() {
   }
   return res.json();
 }
+
+// This file has a .jsx extension, but it doesn't use any JSX. It's all just JavaScript

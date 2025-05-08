@@ -1,4 +1,5 @@
 import React from "react";
+// no need to import React
 import { Menubar } from "primereact/menubar";
 
 export default function Navbar({ data }) {
@@ -25,6 +26,7 @@ export default function Navbar({ data }) {
           <img
             src={data.logo.url}
             alt="logo"
+            // make the alt a little bit more descriptive: Capathon logo
             className="w-32 md:w-48 lg:w-60"
           />
         }

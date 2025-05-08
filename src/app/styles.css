@@ -12,6 +12,7 @@ main {
 section {
   @apply my-16 w-full inline-block;
 }
+/* All these comments are so beautiful, but unnecessary */
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
