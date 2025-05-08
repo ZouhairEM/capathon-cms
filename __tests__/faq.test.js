@@ -14,7 +14,7 @@ describe("FaqSection Component", () => {
     );
 
     const headers = screen.getAllByRole("button");
-    
+
     expect(headers.length).toBeGreaterThanOrEqual(1);
 
     headers.forEach((header) => {
