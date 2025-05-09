@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Navbar data={navbar} />
+      <Navbar data={data.navbar} />
       <main>
         <FaqSection data={faqSection.faqs} />
         <Countdown data={countdownData.countdown} />

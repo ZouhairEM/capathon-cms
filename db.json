@@ -78,7 +78,17 @@
             "label1": "Sign up",
             "label2": "Sign up next year!"
           }
-        }
+        },
+        "organisers": [
+          {
+            "title": "John Doe",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Jane Smith",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          }
+        ]
       }
     ]
   }
