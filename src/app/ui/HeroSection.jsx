@@ -33,7 +33,6 @@ export default function HeroSection({ data }) {
           >
             <img
               src={items.icon}
-              alt="icon"
               className="w-9 h-9 sm:w-16 sm:h-16"
             />
             <p className="text-center text-sm">{items.text}</p>
