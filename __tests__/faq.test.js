@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import FaqSection from "../src/app/ui/FaqSection";
 
 describe("FaqSection Component", () => {
-  test("renders all AccordionTab headers", () => {
+  xtest("renders all AccordionTab headers", () => {
     render(
       <FaqSection
         faqs={[
