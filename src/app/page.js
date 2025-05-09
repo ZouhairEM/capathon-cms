@@ -2,6 +2,7 @@ import Countdown from "./ui/Countdown";
 import FaqSection from "./ui/FaqSection.jsx";
 import SignupSection from "./ui/SignupSection";
 import Navbar from "./ui/Navbar";
+import HeroSection from "./ui/HeroSection";
 import { getData } from "./service/FetchData";
 
 export default async function Home() {
@@ -13,6 +14,7 @@ export default async function Home() {
     <div>
       <Navbar data={navbar} />
       <main>
+        <HeroSection data={heroData.hero} />
         <FaqSection data={faqSection.faqs} />
         <Countdown data={countdownData.countdown} />
         <SignupSection data={signUpData.signUp} />

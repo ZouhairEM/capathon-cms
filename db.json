@@ -27,23 +27,23 @@
           "date": "19-21st June",
           "highlights": [
             {
-              "icon": "/handsonIcon.png",
+              "icon": "/coding.png",
               "text": "Hands on experience"
             },
             {
-              "icon": "/BrainIcon.png",
+              "icon": "/brainstorming.png",
               "text": "Learn new stuff"
             },
             {
-              "icon": "/ConnectionIcon.png",
+              "icon": "/collaboration.png",
               "text": "Make connections"
             },
             {
-              "icon": "/FunIcon.png",
+              "icon": "/confetti.png",
               "text": "Have fun"
             },
             {
-              "icon": "/DotsIcon.png",
+              "icon": "/more.png",
               "text": "And much more!"
             }
           ]

@@ -20,34 +20,32 @@ describe("Countdown component", () => {
   });
 
   test("should update countdown over time", () => {
-    // Mock the system time and set it to June 12th 2025 
+    // Mock the system time and set it to June 12th 2025
     jest.setSystemTime(new Date("2025-06-12T00:00:00Z"));
 
     // Render the Countdown component for the first time
     const { unmount } = render(<Countdown data={mockData} />);
-  
+
     // Retrieve the amount of days left on the countdown
     const daysElement = screen.getByText("days").previousSibling;
     const initialDays = Number(daysElement.textContent);
 
     // Unmount the previously rendered Countdown component
     unmount();
-  
+
     // Update the mocked system time and set it to 6 days later
     jest.setSystemTime(new Date("2025-06-18T00:00:00Z"));
 
     // Render the Countdown component for the second time
     render(<Countdown data={mockData} />);
-  
+
     // Retrieve the amount of days left on the countdown with the new mocked system time in place
     const updatedDaysElement = screen.getByText("days").previousSibling;
     const updatedDays = Number(updatedDaysElement.textContent);
-  
+
     // Expect the countdown to display fewer days than initially
     expect(updatedDays).toBeLessThan(initialDays);
   });
-  
-  
 
   test("should not let Countdown component count below zero", () => {
     render(<Countdown data={mockData} />);
