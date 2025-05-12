@@ -1,5 +1,3 @@
-import React from 'react';
-// no need to import React
 import { Menubar } from 'primereact/menubar';
 
 export default function Navbar({ data }) {
@@ -8,7 +6,7 @@ export default function Navbar({ data }) {
       label: data.dropdownMenu.title,
       items: data.dropdownMenu.items.map((item) => ({
         label: item.title,
-        url: '#', // url: "#past-events" (Remember to add ID to the section)
+        url: '#',
       })),
     },
     {
@@ -25,12 +23,11 @@ export default function Navbar({ data }) {
         start={
           <img
             src={data.logo.url}
-            alt="logo"
-            // make the alt a little bit more descriptive: Capathon logo
+            alt="Capathon logo"
             className="w-32 md:w-48 lg:w-60"
           />
         }
-        className="w-full flex justify-between bg-blue-700"
+        className="flex w-full justify-between bg-blue-700"
       />
     </nav>
   );
