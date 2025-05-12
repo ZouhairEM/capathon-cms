@@ -9,11 +9,15 @@ export default function SignupSection({ data }) {
   return (
     <section className="text-center">
       <p className="w-2/3 m-auto mb-4">{data.content}</p>
-        <Button
-          label={data.signUpPossible ? data.buttonLabels.label1 : data.buttonLabels.label2}
-          onClick={handleSignUp}
-          disabled={!data.signUpPossible}
-        ></Button>
+      <Button
+        label={
+          data.signUpPossible
+            ? data.buttonLabels.label1
+            : data.buttonLabels.label2
+        }
+        onClick={handleSignUp}
+        disabled={!data.signUpPossible}
+      ></Button>
     </section>
   );
 }

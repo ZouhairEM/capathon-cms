@@ -6,7 +6,7 @@ import { getData } from "./service/FetchData";
 
 export default async function Home() {
   const data = await getData();
-  const [countdownData, signUpData] = data.sections;
+  const [heroData, faqSection, countdownData, signUpData] = data.sections;
   const { navbar } = data;
   const faqs = countdownData.faqSection.faqs
   // This missing semicolon on line 11 made me think, you can configure prettier to include semicolons as part of the linting, can you look into it?
@@ -16,7 +16,7 @@ export default async function Home() {
     <div>
       <Navbar data={navbar} />
       <main>
-        <FaqSection faqs={faqs} />
+        <FaqSection data={faqSection.faqs} />
         <Countdown data={countdownData.countdown} />
         <SignupSection data={signUpData.signUp} />
       </main>
