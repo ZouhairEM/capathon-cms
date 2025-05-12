@@ -1,6 +1,6 @@
-"use client";
-import { useState, useEffect } from "react";
-import { Card } from "primereact/card";
+'use client';
+import { useState, useEffect } from 'react';
+import { Card } from 'primereact/card';
 
 export default function Countdown({ data }) {
   // Countdown can be renamed CountdownSection
@@ -41,12 +41,12 @@ export default function Countdown({ data }) {
 
   return (
     <section
-    // move data attributes after the class 
+      // move data attributes after the class
       data-cy="countdown-section"
       className="text-center p-6 bg-blue-100 rounded-lg shadow-lg"
     >
       {/* Heading styling should be universal, so move all the styling to one file and define all the other headers there too
-      */}
+       */}
       <h2 className="text-2xl font-semibold text-blue-800">
         Time left until the event
       </h2>
@@ -55,12 +55,20 @@ export default function Countdown({ data }) {
       */}
       <div className="grid grid-cols-4 gap-2 md:gap-6 mt-6 mb-5 max-w-lg min-w-xs m-auto">
         {/* the timePart in the loop can already be destructured */}
-        {hydrated && Object.entries(timeLeft).map((timePart) => (
-          <Card className="bg-blue-700 text-white rounded-lg shadow-lg" key={timePart[0]}>
-            <span className="text-md md:text-xl font-bold block">{timePart[1]}</span>
-            <span className="text-sm md:text-lg capitalize">{timePart[0]}</span>
-          </Card>
-        ))}
+        {hydrated &&
+          Object.entries(timeLeft).map((timePart) => (
+            <Card
+              className="bg-blue-700 text-white rounded-lg shadow-lg"
+              key={timePart[0]}
+            >
+              <span className="text-md md:text-xl font-bold block">
+                {timePart[1]}
+              </span>
+              <span className="text-sm md:text-lg capitalize">
+                {timePart[0]}
+              </span>
+            </Card>
+          ))}
       </div>
     </section>
   );

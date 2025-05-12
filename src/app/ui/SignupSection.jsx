@@ -1,9 +1,9 @@
-"use client";
-import { Button } from "primereact/button";
+'use client';
+import { Button } from 'primereact/button';
 
 export default function SignupSection({ data }) {
   function handleSignUp() {
-    console.log("Clicked!");
+    console.log('Clicked!');
   }
 
   return (
