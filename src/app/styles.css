@@ -13,7 +13,6 @@ section {
   @apply my-16 inline-block w-full;
 }
 
-/* Reusable classes */
-.h2-heading-blue {
+h2 {
   @apply text-2xl font-semibold text-blue-800;
 }
