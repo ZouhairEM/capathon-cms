@@ -1,38 +1,18 @@
 @layer theme, base, components, primereact, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
-@import "primereact/resources/themes/saga-blue/theme.css" layer(primereact);
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@import 'primereact/resources/themes/saga-blue/theme.css' layer(primereact);
 
 /* General layout styling */
 main {
-  @apply min-w-sm max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto;
+  @apply m-auto max-w-md min-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl;
 }
 
 section {
-  @apply my-16 w-full inline-block;
-}
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  @apply my-16 inline-block w-full;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h2 {
+  @apply text-2xl font-semibold text-blue-800;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */

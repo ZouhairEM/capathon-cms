@@ -1,5 +1,4 @@
-import React from "react";
-import { Menubar } from "primereact/menubar";
+import { Menubar } from 'primereact/menubar';
 
 export default function Navbar({ data }) {
   const items = [
@@ -11,9 +10,9 @@ export default function Navbar({ data }) {
       })),
     },
     {
-      label: "Sign Up",
+      label: 'Sign Up',
       url: data.signupButton.url,
-      target: "_blank",
+      target: '_blank',
     },
   ];
 
@@ -24,11 +23,11 @@ export default function Navbar({ data }) {
         start={
           <img
             src={data.logo.url}
-            alt="logo"
+            alt="Capathon logo"
             className="w-32 md:w-48 lg:w-60"
           />
         }
-        className="w-full flex justify-between bg-blue-700"
+        className="flex w-full justify-between bg-blue-700"
       />
     </nav>
   );
