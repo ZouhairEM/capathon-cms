@@ -1,3 +1,11 @@
+## [0.1.18] - 2025-05-13
+
+### Fixed & added
+
+- Resolved code smells.
+- Added `prettier.config.mjs`.
+- Added prettier-plugin-tailwindcss plugin.
+
 ## [0.1.17] - 2025-05-08
 
 ### Fixed

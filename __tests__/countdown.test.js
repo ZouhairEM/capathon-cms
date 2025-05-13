@@ -61,13 +61,9 @@ describe('Countdown component', () => {
 
   test('clears interval when unmounting', () => {
     const clearIntervalMock = jest.spyOn(global, 'clearInterval');
-
     const { unmount } = render(<Countdown data={mockData} />);
-
     unmount();
-
     expect(clearIntervalMock).toHaveBeenCalled();
-
     clearIntervalMock.mockRestore();
   });
 });

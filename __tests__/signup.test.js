@@ -18,7 +18,6 @@ describe('SignUpSection Component', () => {
     const button = screen.getAllByRole('button');
 
     expect(content.length).toEqual(1);
-
     expect(button.length).toEqual(1);
   });
 });
