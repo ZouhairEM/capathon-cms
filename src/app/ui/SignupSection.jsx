@@ -1,14 +1,14 @@
-"use client";
-import { Button } from "primereact/button";
+'use client';
+import { Button } from 'primereact/button';
 
 export default function SignupSection({ data }) {
   function handleSignUp() {
-    console.log("Clicked!");
+    console.log('Clicked!');
   }
 
   return (
     <section className="text-center">
-      <p className="w-2/3 m-auto mb-4">{data.content}</p>
+      <p className="m-auto mb-4 w-2/3">{data.content}</p>
       <Button
         label={
           data.signUpPossible

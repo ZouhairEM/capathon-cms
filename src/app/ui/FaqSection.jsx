@@ -1,7 +1,5 @@
-"use client";
-
-import React from "react";
-import { Accordion, AccordionTab } from "primereact/accordion";
+'use client';
+import { Accordion, AccordionTab } from 'primereact/accordion';
 
 export default function FaqSection({ data }) {
   return (

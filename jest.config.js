@@ -1,17 +1,17 @@
-const nextJest = require("next/jest");
+const nextJest = require('next/jest');
 
 /** @type {import('jest').Config} */
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
-  dir: "./",
+  dir: './',
 });
 
 // Add any custom config to be passed to Jest
 const config = {
-  coverageProvider: "v8",
-  testEnvironment: "jsdom",
+  coverageProvider: 'v8',
+  testEnvironment: 'jsdom',
   // Add more setup options before each test is run
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   coverageThreshold: {
     global: {
       branches: 80,
@@ -20,20 +20,20 @@ const config = {
       statements: 80,
     },
   },
-  coverageProvider: "babel",
+  coverageProvider: 'babel',
   moduleFileExtensions: [
-    "js",
-    "mjs",
-    "cjs",
-    "jsx",
-    "ts",
-    "tsx",
-    "json",
-    "node",
+    'js',
+    'mjs',
+    'cjs',
+    'jsx',
+    'ts',
+    'tsx',
+    'json',
+    'node',
   ],
-  testEnvironment: "@happy-dom/jest-environment",
+  testEnvironment: '@happy-dom/jest-environment',
   transform: {
-    "^.+\\.[tj]sx?$": "babel-jest",
+    '^.+\\.[tj]sx?$': 'babel-jest',
   },
 };
 
