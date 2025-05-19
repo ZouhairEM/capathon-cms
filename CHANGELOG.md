@@ -1,3 +1,9 @@
+## [0.1.19] - 2025-05-19
+
+### Added
+
+- Added custom Capathon colors to `styles.css`.
+
 ## [0.1.18] - 2025-05-09
 
 ### Added
