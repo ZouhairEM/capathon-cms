@@ -16,3 +16,10 @@ section {
 h2 {
   @apply text-2xl font-semibold text-blue-800;
 }
+
+@theme {
+  --color-capathon-primary: #fcea84;
+  --color-capathon-primary-variant: #ffed86;
+  --color-capathon-secondary: #1e1e1e;
+  --color-capathon-surface: #d9d9d9;
+}
