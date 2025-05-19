@@ -12,6 +12,14 @@ main {
 section {
   @apply my-16 w-full inline-block;
 }
+
+@theme {
+  --color-capathon-primary: #fcea84;
+  --color-capathon-primary-variant: #ffed86;
+  --color-capathon-secondary: #1e1e1e;
+  --color-capathon-surface: #d9d9d9;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
