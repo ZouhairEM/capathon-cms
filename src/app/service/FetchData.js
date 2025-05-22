@@ -1,7 +1,17 @@
+const contentful = require('contentful');
+
+const client = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  environment: 'master',
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+});
+
 export async function getData() {
-  const res = await fetch('http://localhost:3001/data');
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
+  try {
+    const entry = await client.getEntry(process.env.CONTENTFUL_ENTRY_ID);
+    return entry.fields.db.data;
+  } catch (error) {
+    console.error(error);
+    return null;
   }
-  return res.json();
 }
