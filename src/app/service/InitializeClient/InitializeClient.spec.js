@@ -10,12 +10,12 @@ describe('InitializeClient', () => {
     // Reset the module registry and environment variables before each test
     jest.resetModules();
     process.env = { ...OLD_ENV };
-    process.env.CONTENTFUL_SPACE_ID = 'mock_space';
-    process.env.CONTENTFUL_ACCESS_TOKEN = 'mock_token';
+    process.env.CONTENTFUL_SPACE_ID = 'mock_space_id';
+    process.env.CONTENTFUL_ACCESS_TOKEN = 'mock_access_token';
   });
 
-  afterAll(() => {
-    // Restore the original environment variables after all tests
+  afterEach(() => {
+    // Restore the original environment variables after each test
     process.env = OLD_ENV;
   });
 
@@ -24,9 +24,9 @@ describe('InitializeClient', () => {
     const clientModule = await import('./InitializeClient.js');
     // Ensure the createClient function was called with the correct parameters
     expect(createClient).toHaveBeenCalledWith({
-      space: 'mock_space',
+      space: 'mock_space_id',
       environment: 'master',
-      accessToken: 'mock_token',
+      accessToken: 'mock_access_token',
     });
     expect(clientModule.default).toBe('mockClient');
   });

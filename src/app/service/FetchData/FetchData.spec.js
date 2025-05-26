@@ -11,7 +11,7 @@ describe('getData', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
-    process.env = { ...OLD_ENV, CONTENTFUL_ENTRY_ID: 'test_entry_id' };
+    process.env = { ...OLD_ENV, CONTENTFUL_ENTRY_ID: 'mock_entry_id' };
   });
 
   afterEach(() => {
@@ -23,7 +23,7 @@ describe('getData', () => {
     mockGetEntry.mockResolvedValueOnce(mockData);
 
     const result = await getData();
-    expect(mockGetEntry).toHaveBeenCalledWith('test_entry_id');
+    expect(mockGetEntry).toHaveBeenCalledWith('mock_entry_id');
     expect(result).toEqual({ foo: 'bar' });
   });
 
