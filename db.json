@@ -78,14 +78,32 @@
             "label1": "Sign up",
             "label2": "Sign up next year!"
           }
-        },
+        }
+      },
+      {
         "organisers": [
           {
-            "title": "John Doe",
+            "title": "Falco de Beer",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Jane Smith",
+            "title": "Maaike Nijhuis",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Zouhair El-Mariami",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Ryan van de Bogaard",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Martin Sabaka",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Noa van Bentem",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           }
         ]
