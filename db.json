@@ -79,6 +79,34 @@
             "label2": "Sign up next year!"
           }
         }
+      },
+      {
+        "organisers": [
+          {
+            "title": "Falco de Beer",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Maaike Nijhuis",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Zouhair El-Mariami",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Ryan van de Bogaard",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Martin Sabaka",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          },
+          {
+            "title": "Noa van Bentem",
+            "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
+          }
+        ]
       }
     ]
   }
