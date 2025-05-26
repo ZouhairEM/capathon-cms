@@ -36,3 +36,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+@layer base {
+  body {
+    .p-card .p-card-body {
+      padding: 0;
+    }
+  }
+}
