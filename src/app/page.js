@@ -2,12 +2,13 @@ import Countdown from "./ui/Countdown";
 import FaqSection from "./ui/FaqSection.jsx";
 import SignupSection from "./ui/SignupSection";
 import Navbar from "./ui/Navbar";
-import { getData } from "./service/FetchData";
 import OrganiserSection from "./ui/OrganiserSection";
+import { getData } from "./service/FetchData";
 
 export default async function Home() {
   const data = await getData();
-  const [heroData, faqSection, countdownData, signUpData] = data.sections;
+  const [heroData, faqSection, countdownData, signUpData, organisersSection] =
+    data.sections;
   const { navbar } = data;
 
   return (
@@ -17,7 +18,7 @@ export default async function Home() {
         <FaqSection data={faqSection.faqs} />
         <Countdown data={countdownData.countdown} />
         <SignupSection data={signUpData.signUp} />
-        <OrganiserSection />
+        <OrganiserSection data={organisersSection.organisers} />
       </main>
     </div>
   );
