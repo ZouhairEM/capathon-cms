@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Card } from 'primereact/card';
+import { Card } from "primereact/card";
 
-export default function OrganiserSection({data}) {
+export default function OrganiserSection({ data }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-16">
       {data.map((organiser) => {
@@ -17,7 +17,7 @@ export default function OrganiserSection({data}) {
         return (
           <Card
             key={organiser.title}
-            pt={{body : "p-0"}}
+            pt={{ body: "p-0" }}
             title={
               <span className="h-[55px] flex items-center justify-center w-full text-[15px] m-[5px]">
                 {organiser.title}
