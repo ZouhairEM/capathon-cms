@@ -30,7 +30,9 @@ describe('getData', () => {
   it('returns null and logs error when client.getEntry throws', async () => {
     const error = new Error('fail');
     mockGetEntry.mockRejectedValueOnce(error);
-    const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
+    const consoleSpy = jest
+      .spyOn(console, 'error')
+      .mockImplementation(() => {});
 
     const result = await getData();
     expect(consoleSpy).toHaveBeenCalledWith(error);
