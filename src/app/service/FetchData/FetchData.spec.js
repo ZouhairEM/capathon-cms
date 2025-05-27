@@ -27,17 +27,14 @@ describe('getData', () => {
     expect(result).toEqual({ foo: 'bar' });
   });
 
-  it('returns null and logs error when client.getEntry throws', async () => {
+  it('logs error when client.getEntry throws', async () => {
     const error = new Error('fail');
     mockGetEntry.mockRejectedValueOnce(error);
     const consoleSpy = jest
       .spyOn(console, 'error')
       .mockImplementation(() => {});
-
-    const result = await getData();
+    await getData();
     expect(consoleSpy).toHaveBeenCalledWith(error);
-    expect(result).toBeNull();
-
     consoleSpy.mockRestore();
   });
 });

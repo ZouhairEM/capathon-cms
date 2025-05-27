@@ -6,6 +6,5 @@ export async function getData() {
     return entry.fields.db.data;
   } catch (error) {
     console.error(error);
-    return null;
   }
 }
