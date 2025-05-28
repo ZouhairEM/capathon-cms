@@ -19,7 +19,7 @@ describe('getData', () => {
   });
 
   it('returns db.data when client.getEntry resolves', async () => {
-    const mockData = { fields: { data: { data: { foo: 'bar' } } } };
+    const mockData = { fields: { db: { data: { foo: 'bar' } } } };
     mockGetEntry.mockResolvedValueOnce(mockData);
 
     const result = await getData();
