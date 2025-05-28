@@ -5,7 +5,7 @@
 @import 'primereact/resources/themes/saga-blue/theme.css' layer(primereact);
 
 /* General layout styling */
-main {
+/* main {
   @apply m-auto max-w-md min-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl;
 }
 
@@ -41,10 +41,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-} */
+} 
 
 @layer base {
   body .p-card .p-card-body {
     padding: 0;
   }
-}
+} */
