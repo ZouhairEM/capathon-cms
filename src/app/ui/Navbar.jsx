@@ -6,7 +6,7 @@ export default function Navbar({ data }) {
       label: data.dropdownMenu.title,
       items: data.dropdownMenu.items.map((item) => ({
         label: item.title,
-        url: "#", // url: "#past-events" (Remember to add ID to the section)
+        url: '#', // url: "#past-events" (Remember to add ID to the section)
       })),
     },
     {
