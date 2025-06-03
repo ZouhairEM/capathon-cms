@@ -81,32 +81,38 @@
         }
       },
       {
-        "organisers": [
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "organisers": [
           {
-            "title": "Falco de Beer",
+            "firstName": "Falco",
+            "lastName": "de Beer",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Maaike Nijhuis",
+            "firstName": "Maaike",
+            "lastName": "Nijhuis",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Zouhair El-Mariami",
+            "firstName": "Zouhair",
+            "lastName": "El-Mariami",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Ryan van de Bogaard",
+            "firstName": "Ryan",
+            "lastName": "van de Bogaard",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Martin Sabaka",
+            "firstName": "Martin",
+            "lastName": "Sabaka",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           },
           {
-            "title": "Noa van Bentem",
+            "firstName": "Noa",
+            "lastName": "van Bentem",
             "header": "https://primefaces.org/cdn/primereact/images/usercard.png"
           }
-        ]
+        ]                      
       }
     ]
   }
