@@ -17,6 +17,11 @@ h2 {
   @apply text-2xl font-semibold text-blue-800;
 }
 
+.dingetje {
+  @apply flex justify-start items-center h-[118px] bg-black text-white;
+  clip-path: polygon(99.6% 0%, 2.8% 0%, 0.44% 19.1%, 0.44% 93.7%, 97.2% 93.7%, 99.6% 75.4%); 
+}
+
 @theme {
   --color-capathon-primary: #fcea84;
   --color-capathon-primary-variant: #ffed86;
