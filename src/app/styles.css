@@ -25,21 +25,39 @@ h2 {
 }
 
 .custom-shape-1 {
-  clip-path: polygon(0% 0%, 93.8% 0%, 100% 14%, 100% 100%, 100% 100%, 6.8% 100%, 0% 87%, 0% 0%);
+  clip-path: polygon(
+    0% 0%,
+    93.8% 0%,
+    100% 14%,
+    100% 100%,
+    100% 100%,
+    6.8% 100%,
+    0% 87%,
+    0% 0%
+  );
 }
 
-.custom-shape-2{
-  clip-path: polygon(7.4% 0%, 100% 0%, 100% 0%, 100% 87%, 93.8% 100%, 0% 100%, 0% 100%, 0% 12.7%);
+.custom-shape-2 {
+  clip-path: polygon(
+    7.4% 0%,
+    100% 0%,
+    100% 0%,
+    100% 87%,
+    93.8% 100%,
+    0% 100%,
+    0% 100%,
+    0% 12.7%
+  );
 }
 
-.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link{
-  background-color:#fcea84;
-  border-radius: 0
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+  background-color: #fcea84;
+  border-radius: 0;
 }
 
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
   border-color: black;
-  color: black
+  color: black;
 }
 
 .p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {

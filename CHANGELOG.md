@@ -1,3 +1,9 @@
+## [0.2.1] - 2025-06-10
+
+### Added
+
+- Added `PastEventsSection.jsx` that renders images and description of past events. 
+
 ## [0.2.0] - 2025-05-22
 
 ### Added

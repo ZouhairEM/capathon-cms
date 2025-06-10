@@ -17,21 +17,23 @@ export default function PastEventsSection({ data }) {
     <img
       src={item.imageSrc}
       alt={item.alt}
-      className="w-full h-80 sm:h-100 block"
+      className="block h-80 w-full sm:h-100"
     />
   );
 
   return (
-    <section className=" bg-capathon-primary sm:p-0">
-      <h2 className="mt-6" style={{ color: 'black' }}>PAST EVENTS</h2>
+    <section className="bg-capathon-primary sm:p-0">
+      <h2 className="mt-6" style={{ color: 'black' }}>
+        PAST EVENTS
+      </h2>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
-        className="flex justify-end max-w-2xl mx-auto p-tabmenu-nav"
+        className="p-tabmenu-nav mx-auto flex max-w-2xl justify-end"
       />
 
-      <div className="mb-6 max-w-2xl mx-auto">
+      <div className="mx-auto mb-6 max-w-2xl">
         <Galleria
           value={selectedYear.images}
           item={itemTemplate}
@@ -44,12 +46,12 @@ export default function PastEventsSection({ data }) {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-6 mb-6">
-        <div className="custom-shape-1 bg-capathon-secondary opacity-75 sm:w-3/5 ">
-          <p className='m-5 text-white'>{selectedYear.description}</p>
+      <div className="mb-6 flex flex-col gap-6 sm:flex-row">
+        <div className="custom-shape-1 bg-capathon-secondary opacity-75 sm:w-3/5">
+          <p className="m-5 text-white">{selectedYear.description}</p>
         </div>
-        <div className="custom-shape-2 bg-capathon-secondary opacity-75 sm:w-2/5">	
-          <p className='m-5 text-white'>{selectedYear.theme}</p>
+        <div className="custom-shape-2 bg-capathon-secondary opacity-75 sm:w-2/5">
+          <p className="m-5 text-white">{selectedYear.theme}</p>
         </div>
       </div>
     </section>
