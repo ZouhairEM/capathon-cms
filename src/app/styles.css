@@ -2,7 +2,7 @@
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
-@import 'primereact/resources/themes/saga-blue/theme.css' layer(primereact);
+/* @import 'primereact/resources/themes/saga-blue/theme.css' layer(primereact); */
 
 /* General layout styling */
 main {
@@ -22,4 +22,26 @@ h2 {
   --color-capathon-primary-variant: #ffed86;
   --color-capathon-secondary: #1e1e1e;
   --color-capathon-surface: #d9d9d9;
+}
+
+.custom-shape-1 {
+  clip-path: polygon(0% 0%, 93.8% 0%, 100% 14%, 100% 100%, 100% 100%, 6.8% 100%, 0% 87%, 0% 0%);
+}
+
+.custom-shape-2{
+  clip-path: polygon(7.4% 0%, 100% 0%, 100% 0%, 100% 87%, 93.8% 100%, 0% 100%, 0% 100%, 0% 12.7%);
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link{
+  background-color:#fcea84;
+  border-radius: 0
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+  border-color: black;
+  color: black
+}
+
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+  background-color: black;
 }

@@ -1,50 +1,57 @@
-"use client"
+'use client';
 
-import { useState } from "react";
-import { TabMenu } from "primereact/tabmenu";
-import { Galleria } from "primereact/galleria";
-
+import { useState } from 'react';
+import { TabMenu } from 'primereact/tabmenu';
+import { Galleria } from 'primereact/galleria';
 
 export default function PastEventsSection({ data }) {
-    const tabItems = data.map((item, index) => ({
-        label: item.year,
-        yearIndex: index,
-    }));
+  const tabItems = data.map((item, index) => ({
+    label: item.year,
+    yearIndex: index,
+  }));
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const selectedYear = data[activeIndex];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const selectedYear = data[activeIndex];
 
-    const itemTemplate = (item) => (
-        <img src={item.imageSrc} alt={item.alt} style={{ width: '100%', display: 'block' }} />
-    );
+  const itemTemplate = (item) => (
+    <img
+      src={item.imageSrc}
+      alt={item.alt}
+      className="w-full h-80 sm:h-100 block"
+    />
+  );
 
-    return(
-        <div>
-            <h2>PAST EVENTS</h2>
-            <TabMenu model={tabItems} activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)} />
+  return (
+    <section className=" bg-capathon-primary sm:p-0">
+      <h2 className="mt-6" style={{ color: 'black' }}>PAST EVENTS</h2>
+      <TabMenu
+        model={tabItems}
+        activeIndex={activeIndex}
+        onTabChange={(e) => setActiveIndex(e.index)}
+        className="flex justify-end max-w-2xl mx-auto p-tabmenu-nav"
+      />
 
-            <div>
-                <Galleria 
-                    value={selectedYear.images}
-                    item={itemTemplate}
-                    numVisible={5}
-                    circular
-                    showThumbnails={false}
-                    showItemNavigators
-                    showItemNavigatorsOnHover
-                    showIndicators
-                    style={{ maxWidth:'100%' }}
-                />
-            </div>
+      <div className="mb-6 max-w-2xl mx-auto">
+        <Galleria
+          value={selectedYear.images}
+          item={itemTemplate}
+          circular
+          showThumbnails={false}
+          showItemNavigators
+          showItemNavigatorsOnHover
+          showIndicators
+          className="max-w-full"
+        />
+      </div>
 
-            <div>
-                <div>
-                    <p>{selectedYear.description}</p>
-                </div>
-                <div>
-                    <p>{selectedYear.theme}</p>
-                </div>
-            </div>
+      <div className="flex flex-col sm:flex-row gap-6 mb-6">
+        <div className="custom-shape-1 bg-capathon-secondary opacity-75 sm:w-3/5 ">
+          <p className='m-5 text-white'>{selectedYear.description}</p>
         </div>
-    )
+        <div className="custom-shape-2 bg-capathon-secondary opacity-75 sm:w-2/5">	
+          <p className='m-5 text-white'>{selectedYear.theme}</p>
+        </div>
+      </div>
+    </section>
+  );
 }
