@@ -8,7 +8,7 @@ import { getData } from './service/FetchData/FetchData';
 
 export default async function Home() {
   const data = await getData();
-  const [heroData, ctaData, faqSection, countdownData, signUpData] = data.sections;
+  const [heroData, pastEventData, ctaData, faqSection, countdownData, signUpData] = data.sections;
   const { navbar } = data;
 
   return (

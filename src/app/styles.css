@@ -10,7 +10,7 @@ main {
 }
 
 section {
-  @apply my-16 inline-block w-full;
+  @apply inline-block w-full;
 }
 
 h2 {
@@ -18,8 +18,8 @@ h2 {
 }
 
 .dingetje {
-  @apply flex justify-start items-center h-[118px] bg-black text-white;
-  clip-path: polygon(99.6% 0%, 2.8% 0%, 0.44% 19.1%, 0.44% 93.7%, 97.2% 93.7%, 99.6% 75.4%); 
+  @apply flex justify-start items-center h-[118px] bg-black/70 text-white;
+  clip-path: polygon(100% 0%, 2.8% 0%, 0% 19.1%, 0% 93.7%, 97.2% 93.7%, 100% 75%); 
 }
 
 @theme {
