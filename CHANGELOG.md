@@ -2,7 +2,7 @@
 
 ### Added
 
-- Added `PastEventsSection.jsx` that renders images and description of past events. 
+- Added `PastEventsSection.jsx` that renders images and description of past events.
 
 ## [0.2.0] - 2025-05-22
 

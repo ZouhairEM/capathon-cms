@@ -8,7 +8,7 @@ import PastEventsSection from './ui/PastEventsSection';
 
 export default async function Home() {
   const data = await getData();
-  const [heroData, pastEventsData, faqSection, countdownData, signUpData] =
+  const [heroData, pastEventsData, ctaData, faqSection, countdownData, signUpData] =
     data.sections;
   const { navbar } = data;
 

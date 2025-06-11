@@ -10,7 +10,7 @@ export default function PastEventsSection({ data }) {
     yearIndex: index,
   }));
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const selectedYear = data[activeIndex];
 
   const itemTemplate = (item) => (
@@ -22,15 +22,19 @@ export default function PastEventsSection({ data }) {
   );
 
   return (
-    <section className="bg-capathon-primary sm:p-0">
-      <h2 className="mt-6" style={{ color: 'black' }}>
+    <section className="bg-capathon-primary sm:p-0 relative">
+      <img 
+        src= {data[0].icon}
+        className='absolute top-0 right-0 h-40 w-70 opacity-50 '
+      />
+      <h2 className="pt-35 pl-5" style={{ color: 'black' }}>
         PAST EVENTS
       </h2>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
-        className="p-tabmenu-nav mx-auto flex max-w-2xl justify-end"
+        className="mx-auto flex max-w-2xl justify-end"
       />
 
       <div className="mx-auto mb-6 max-w-2xl">
