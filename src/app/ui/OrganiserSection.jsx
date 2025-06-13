@@ -18,18 +18,19 @@ export default function OrganiserSection({ data }) {
           return (
             <Card
               key={organisers.firstName}
-              pt={{ body: 'p-0',
-                    title: 'm-0 text-black font-medium title-block',
-                 }}
+              pt={{
+                body: 'p-0',
+                title: 'm-0 text-black font-medium title-block absolute',
+              }}
               title={
-                <span className="flex items-center justify-center text-center font-sans text-[1rem]">
-                  {organisers.firstName} 
-                  <br></br> 
-                  { organisers.lastName}
+                <span className="left[-15%] relative flex items-center justify-center text-center font-sans text-[1rem]">
+                  {organisers.firstName}
+                  <br></br>
+                  {organisers.lastName}
                 </span>
               }
               header={header}
-              className="w-[10rem] relative"
+              className="w-[10rem]"
             />
           );
         })}

@@ -44,7 +44,7 @@ body {
 }  */
 
 @layer base {
-  body .p-card .p-card-body .p-card-title .p-card-content{
+  body .p-card .p-card-body .p-card-title .p-card-content {
     padding: 0;
   }
 }
@@ -52,16 +52,24 @@ body {
 @layer utilities {
   .title-block {
     display: flex;
+    position: relative;
+    left: -14%;
     text-align: center;
     margin: 0 auto;
     justify-content: center;
-    background-color:#FFED86;
+    background-color: #ffed86;
     opacity: 0.5;
-    clip-path: polygon(12.4% 0%, 91.2% 0%, 100% 14%, 100% 100%, 87.6% 100%, 8.8% 100%, 0% 86%, 0% 0%);
+    clip-path: polygon(
+      12.4% 0%,
+      91.2% 0%,
+      100% 14%,
+      100% 100%,
+      87.6% 100%,
+      8.8% 100%,
+      0% 86%,
+      0% 0%
+    );
     height: 6rem;
-    width: 13rem;  }
-}
-
-*{
-  outline: solid 1px red;
+    width: 13rem;
+  }
 }
