@@ -4,7 +4,7 @@ import SignupSection from './ui/SignupSection';
 import Navbar from './ui/Navbar';
 import HeroSection from './ui/HeroSection';
 import OrganiserSection from './ui/OrganiserSection';
-import { getData } from './service/FetchData';
+import { getData } from './service/FetchData/FetchData';
 
 export default async function Home() {
   const data = await getData();

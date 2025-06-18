@@ -23,6 +23,7 @@ h2 {
   --color-capathon-secondary: #1e1e1e;
   --color-capathon-surface: #d9d9d9;
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

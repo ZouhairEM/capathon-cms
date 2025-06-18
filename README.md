@@ -22,6 +22,12 @@ Capathon CMS is a content management system built in React which contains inform
    ```bash
    npm install
    ```
+4. Set up `.env` file:
+   ```bash
+   CONTENTFUL_ACCESS_TOKEN= '**access token from Contentful**'
+   CONTENTFUL_ENTRY_ID= '**entry id from Contentful**'
+   CONTENTFUL_SPACE_ID= '**space id from Contentful**'
+   ```
 
 ## Usage
 

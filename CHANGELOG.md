@@ -1,3 +1,9 @@
+## [0.2.0] - 2025-05-22
+
+### Added
+
+- Connected repo to Contentful.
+
 ## [0.1.20] - 2025-05-19
 
 ### Added
