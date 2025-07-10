@@ -10,7 +10,7 @@ export default function CtaSection({ data }) {
                         <div className="w-1 h-[705px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                         <div className="h-1 bg-black w-full"></div>
                     </div>
-                    <div className="dingetje w-[80%] xl:w-[1018px]">
+                    <div className="cutoff-cornered-box w-[80%] xl:w-[1018px]">
                         <img className="ml-5" src={data.boxes[0].icon} />
                         <p className="mx-5">{data.boxes[0].text}</p>
                     </div>
@@ -20,7 +20,7 @@ export default function CtaSection({ data }) {
                         <div className="w-1 h-[555px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                         <div className="h-1 bg-black w-full"></div>
                     </div>
-                    <div className="dingetje w-[70%] xl:w-[754px]">
+                    <div className="cutoff-cornered-box w-[70%] xl:w-[754px]">
                         <img className="ml-5" src={data.boxes[1].icon} />
                         <p className="mx-5">{data.boxes[1].text}</p>
                     </div>
@@ -31,12 +31,12 @@ export default function CtaSection({ data }) {
                             <div className="w-1 h-[405px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                             <div className="h-1 bg-black w-full"></div>
                         </div>
-                        <div className="dingetje w-[60%] xl:w-[492px]">
+                        <div className="cutoff-cornered-box w-[60%] xl:w-[492px]">
                             <img className="ml-5" src={data.boxes[2].icon} />
                             <p className="mx-5">{data.boxes[2].text}</p>
                         </div>
                     </div>
-                    <div className="bg-capathon-surface my-8 w-[60%] xl:w-[492px] h-70 border-2 place-self-center lg:place-self-end content-center text-center break-words px-2">
+                    <div className="bg-capathon-surface my-8 w-[70%] xl:w-[492px] h-70 border-2 place-self-center lg:place-self-end content-center text-center px-2">
                         <div>
                             <h1 className="text-4xl">{data.connectBox.ctaLine}</h1>
                             <p className="mt-4">

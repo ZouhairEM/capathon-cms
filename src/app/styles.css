@@ -17,9 +17,11 @@ h2 {
   @apply text-2xl font-semibold text-blue-800;
 }
 
-.dingetje {
-  @apply flex justify-start items-center h-[118px] bg-black/70 text-white;
-  clip-path: polygon(100% 0%, 2.8% 0%, 0% 19.1%, 0% 93.7%, 97.2% 93.7%, 100% 75%); 
+.cutoff-cornered-box {
+  @apply 
+    flex justify-start items-center h-[118px] bg-black/70 text-white
+    [clip-path:polygon(20px_0%,100%_0%,100%_calc(100%-20px),calc(100%-20px)_100%,0%_100%,0%_20px)]
+  ;
 }
 
 @theme {
