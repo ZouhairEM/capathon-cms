@@ -45,7 +45,7 @@ export default function PastEventsSection({ data }) {
       />
 
       <div className="mx-auto mb-6 max-w-2xl">
-        {showGallery && (
+        {showGallery && selectedYear?.images?.length > 0 && (
           <Galleria
             value={selectedYear.images}
             item={itemTemplate}
