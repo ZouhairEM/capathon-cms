@@ -53,8 +53,11 @@ export default function PastEventsSection({ data }) {
             showThumbnails={false}
             showItemNavigators
             showItemNavigatorsOnHover
-            showIndicators
             className="max-w-full"
+            pt={{
+              nextItemButton: 'focus:opacity-100',
+              previousItemButton: 'focus:opacity-100',
+            }}
           />
         )}
       </div>
