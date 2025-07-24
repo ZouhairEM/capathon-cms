@@ -2,7 +2,6 @@
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
-/* @import 'primereact/resources/themes/saga-blue/theme.css' layer(primereact); */
 
 /* General layout styling */
 main {
@@ -17,11 +16,17 @@ h2 {
   @apply text-2xl font-semibold text-blue-800;
 }
 
-.cutoff-cornered-box {
+.cut-corners-tl-br {
   @apply 
-    flex justify-start items-center h-[118px] bg-black/70 text-white
+    flex justify-start items-center bg-black/70 text-white
     [clip-path:polygon(20px_0%,100%_0%,100%_calc(100%-20px),calc(100%-20px)_100%,0%_100%,0%_20px)]
   ;
+}
+
+.cut-corners-tr-bl {
+  @apply 
+    flex justify-start items-center bg-black/70 text-white
+    [clip-path:polygon(0%_0%,calc(100%-20px)_0%,100%_20px,100%_100%,20px_100%,0%_calc(100%-20px))];
 }
 
 @theme {
@@ -31,31 +36,6 @@ h2 {
   --color-capathon-surface: #d9d9d9;
 }
 
-.custom-shape-1 {
-  clip-path: polygon(
-    0% 0%,
-    93.8% 0%,
-    100% 14%,
-    100% 100%,
-    100% 100%,
-    6.8% 100%,
-    0% 87%,
-    0% 0%
-  );
-}
-
-.custom-shape-2 {
-  clip-path: polygon(
-    7.4% 0%,
-    100% 0%,
-    100% 0%,
-    100% 87%,
-    93.8% 100%,
-    0% 100%,
-    0% 100%,
-    0% 12.7%
-  );
-}
 
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
   background-color: #fcea84;
