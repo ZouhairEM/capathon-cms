@@ -3,6 +3,13 @@
 @import 'tailwindcss/preflight.css' layer(base);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
+@theme {
+  --color-capathon-primary: #fcea84;
+  --color-capathon-primary-variant: #ffed86;
+  --color-capathon-secondary: #1e1e1e;
+  --color-capathon-surface: #d9d9d9;
+}
+
 /* General layout styling */
 main {
   @apply m-auto max-w-md min-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl;
@@ -10,10 +17,6 @@ main {
 
 section {
   @apply inline-block w-full;
-}
-
-h2 {
-  @apply text-2xl font-semibold text-blue-800;
 }
 
 .cut-corners-tl-br {
@@ -29,24 +32,7 @@ h2 {
     [clip-path:polygon(0%_0%,calc(100%-20px)_0%,100%_20px,100%_100%,20px_100%,0%_calc(100%-20px))];
 }
 
-@theme {
-  --color-capathon-primary: #fcea84;
-  --color-capathon-primary-variant: #ffed86;
-  --color-capathon-secondary: #1e1e1e;
-  --color-capathon-surface: #d9d9d9;
-}
-
-
-.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
-  background-color: #fcea84;
-  border-radius: 0;
-}
-
+/* Needed for the coloring of the highlighted menu item */
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-  border-color: black;
-  color: black;
-}
-
-.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
-  background-color: black;
+  @apply border-black text-black;
 }

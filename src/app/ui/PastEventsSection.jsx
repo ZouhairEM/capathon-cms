@@ -6,14 +6,14 @@ import dynamic from 'next/dynamic';
 const Galleria = dynamic(() => import('primereact/galleria').then(mod => mod.Galleria), { ssr: false });
 
 export default function PastEventsSection({ data }) {
-  const tabItems = data.map((item, index) => ({
+  const tabItems = data.galleryInformation.map((item, index) => ({
     label: item.year,
     yearIndex: index,
   }));
 
   const [showGallery, setShowGallery] = useState(false);
   const [activeIndex, setActiveIndex] = useState(1);
-  const selectedYear = data[activeIndex];
+  const selectedYear = data.galleryInformation[activeIndex];
 
   useEffect(() => {
     // Only render Galleria on the client
@@ -31,17 +31,20 @@ export default function PastEventsSection({ data }) {
   return (
     <section className="bg-capathon-primary sm:p-0 relative">
       <img
-        src={data[0].icon}
-        className='absolute top-0 right-0 h-40 w-70 opacity-50 '
+        src={data.icon}
+        className='absolute top-0 right-0 h-40 w-70 opacity-50'
       />
-      <h2 className="pt-35 pl-5" style={{ color: 'black' }}>
-        PAST EVENTS
+      <h2 className="pt-35 pl-5 text-2xl font-bold sm:text-3xl lg:text-4xl">
+        {data.title}
       </h2>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
         className="mx-auto flex max-w-2xl justify-end"
+        pt={{
+          action: 'bg-capathon-primary rounded-none',
+        }}
       />
 
       <div className="mx-auto mb-6 max-w-2xl">
