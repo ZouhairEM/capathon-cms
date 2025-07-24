@@ -1,8 +1,9 @@
 'use client';
-
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { TabMenu } from 'primereact/tabmenu';
-import { Galleria } from 'primereact/galleria';
+import dynamic from 'next/dynamic';
+// PrimeReact's Galleria relies on browser-specific APIs, so we disable SSR for this component.
+const Galleria = dynamic(() => import('primereact/galleria').then(mod => mod.Galleria), { ssr: false });
 
 export default function PastEventsSection({ data }) {
   const tabItems = data.map((item, index) => ({
@@ -10,8 +11,14 @@ export default function PastEventsSection({ data }) {
     yearIndex: index,
   }));
 
+  const [showGallery, setShowGallery] = useState(false);
   const [activeIndex, setActiveIndex] = useState(1);
   const selectedYear = data[activeIndex];
+
+  useEffect(() => {
+    // Only render Galleria on the client
+    setShowGallery(true);
+  }, []);
 
   const itemTemplate = (item) => (
     <img
@@ -23,8 +30,8 @@ export default function PastEventsSection({ data }) {
 
   return (
     <section className="bg-capathon-primary sm:p-0 relative">
-      <img 
-        src= {data[0].icon}
+      <img
+        src={data[0].icon}
         className='absolute top-0 right-0 h-40 w-70 opacity-50 '
       />
       <h2 className="pt-35 pl-5" style={{ color: 'black' }}>
@@ -38,16 +45,18 @@ export default function PastEventsSection({ data }) {
       />
 
       <div className="mx-auto mb-6 max-w-2xl">
-        <Galleria
-          value={selectedYear.images}
-          item={itemTemplate}
-          circular
-          showThumbnails={false}
-          showItemNavigators
-          showItemNavigatorsOnHover
-          showIndicators
-          className="max-w-full"
-        />
+        {showGallery && (
+          <Galleria
+            value={selectedYear.images}
+            item={itemTemplate}
+            circular
+            showThumbnails={false}
+            showItemNavigators
+            showItemNavigatorsOnHover
+            showIndicators
+            className="max-w-full"
+          />
+        )}
       </div>
 
       <div className="mb-6 flex flex-col gap-6 sm:flex-row">
