@@ -1,30 +1,30 @@
 import CountdownSection from './ui/CountdownSection';
+import CtaSection from './ui/CtaSection';
 import FaqSection from './ui/FaqSection.jsx';
 import SignupSection from './ui/SignupSection';
 import Navbar from './ui/Navbar';
 import HeroSection from './ui/HeroSection';
 import OrganiserSection from './ui/OrganiserSection';
 import { getData } from './service/FetchData/FetchData';
+import PastEventsSection from './ui/PastEventsSection';
 
 export default async function Home() {
   const data = await getData();
-  const [heroData, faqSection, countdownData, signUpData, organisersSection] =
-    data.sections;
+  const [heroData, pastEventsData, ctaData, organisersSection, faqSection, countdownData, signUpData] = data.sections;
   const { navbar } = data;
 
   return (
     <>
       <Navbar data={navbar} />
-      <div>
-        <Navbar data={data.navbar} />
-        <main>
-          <HeroSection data={heroData.hero} />
-          <FaqSection data={faqSection.faqs} />
-          <CountdownSection data={countdownData.countdown} />
-          <SignupSection data={signUpData.signUp} />
-          <OrganiserSection data={organisersSection.organisers} />
-        </main>
-      </div>
+      <main>
+        <HeroSection data={heroData.hero} />
+        <PastEventsSection data={pastEventsData.pastEvents} />
+        <CtaSection data={ctaData.cta} />
+        <OrganiserSection data={organisersSection.organisers} />
+        <FaqSection data={faqSection.faqs} />
+        <CountdownSection data={countdownData.countdown} />
+        <SignupSection data={signUpData.signUp} />
+      </main>
     </>
   );
 }
