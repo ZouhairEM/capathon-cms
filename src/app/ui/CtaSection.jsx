@@ -2,7 +2,7 @@
 
 export default function CtaSection({ data }) {
     return (
-        <section className="bg-capathon-primary">
+        <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)]">
             <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl ml-10 mt-10">{data.title}</h1>
             <div className="flex flex-col items-end lg:ml-10">
                 <div className="flex flex-row items-center mt-20 mb-8 w-full relative">

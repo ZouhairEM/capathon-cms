@@ -29,7 +29,7 @@ export default function PastEventsSection({ data }) {
   );
 
   return (
-    <section className="bg-capathon-primary sm:p-0 relative">
+    <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)] sm:p-0 relative">
       <img
         src={data.icon}
         className='absolute top-0 right-0 h-40 w-70 opacity-50'

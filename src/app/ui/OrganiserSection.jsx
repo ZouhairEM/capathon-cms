@@ -5,7 +5,7 @@ import { Card } from 'primereact/card';
 
 export default function OrganiserSection({ data }) {
   return (
-    <div className='bg-capathon-secondary'>
+    <div className='bg-capathon-secondary bg-[url(/asfalt-light.png)]'>
       <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl ml-10 pt-10 pb-20 text-white">{data.title}</h1>
       <div className=" mx-auto flex w-[56rem] items-center justify-center">
         <div className="grid grid-cols-1 justify-items-center gap-20 sm:grid-cols-2 md:grid-cols-3 pb-20">
