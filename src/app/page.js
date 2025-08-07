@@ -20,7 +20,7 @@ export default async function Home() {
         <HeroSection data={heroData.hero} />
         <PastEventsSection data={pastEventsData.pastEvents} />
         <CtaSection data={ctaData.cta} />
-        <OrganiserSection data={organisersSection.organisers} />
+        <OrganiserSection data={organisersSection.orgSection} />
         <FaqSection data={faqSection.faqs} />
         <CountdownSection data={countdownData.countdown} />
         <SignupSection data={signUpData.signUp} />

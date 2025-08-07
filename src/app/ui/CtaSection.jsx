@@ -10,7 +10,7 @@ export default function CtaSection({ data }) {
                         <div className="w-1 h-[705px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                         <div className="h-1 bg-black w-full"></div>
                     </div>
-                    <div className="cut-corners-tl-br h-[118px] w-[80%] xl:w-[1018px]">
+                    <div className="cut-corners-tl-br h-[118px] w-[80%] xl:w-[1018px] flex justify-start items-center bg-black/70 text-white">
                         <img className="ml-5" src={data.boxes[0].icon} />
                         <p className="mx-5">{data.boxes[0].text}</p>
                     </div>
@@ -20,7 +20,7 @@ export default function CtaSection({ data }) {
                         <div className="w-1 h-[555px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                         <div className="h-1 bg-black w-full"></div>
                     </div>
-                    <div className="cut-corners-tl-br h-[118px] w-[70%] xl:w-[754px]">
+                    <div className="cut-corners-tl-br h-[118px] w-[70%] xl:w-[754px] flex justify-start items-center bg-black/70 text-white">
                         <img className="ml-5" src={data.boxes[1].icon} />
                         <p className="mx-5">{data.boxes[1].text}</p>
                     </div>
@@ -31,7 +31,7 @@ export default function CtaSection({ data }) {
                             <div className="w-1 h-[405px] bg-black absolute left-0 top-0 hidden lg:block"></div>
                             <div className="h-1 bg-black w-full"></div>
                         </div>
-                        <div className="cut-corners-tl-br h-[118px] w-[60%] xl:w-[492px]">
+                        <div className="cut-corners-tl-br h-[118px] w-[60%] xl:w-[492px] flex justify-start items-center bg-black/70 text-white">
                             <img className="ml-5" src={data.boxes[2].icon} />
                             <p className="mx-5">{data.boxes[2].text}</p>
                         </div>

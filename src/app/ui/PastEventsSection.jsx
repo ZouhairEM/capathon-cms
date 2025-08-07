@@ -66,10 +66,10 @@ export default function PastEventsSection({ data }) {
       </div>
 
       <div className="mb-6 flex flex-col gap-6 sm:flex-row">
-        <div className="cut-corners-tr-bl sm:w-3/5">
+        <div className="cut-corners-tr-bl flex justify-start items-center bg-black/70 text-white sm:w-3/5">
           <p className="m-5 text-white">{selectedYear.description}</p>
         </div>
-        <div className="cut-corners-tl-br sm:w-2/5">
+        <div className="cut-corners-tl-br flex justify-start items-center bg-black/70 text-white sm:w-2/5">
           <p className="m-5 text-white">{selectedYear.theme}</p>
         </div>
       </div>
