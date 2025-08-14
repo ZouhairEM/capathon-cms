@@ -8,7 +8,7 @@ export default function OrganiserSection({ data }) {
     <div className='bg-capathon-secondary bg-[url(/asfalt-light.png)]'>
       <h1 className="text-2xl font-bold sm:text-3xl lg:text-4xl ml-10 pt-10 pb-20 text-white">{data.title}</h1>
       <div className="mx-auto flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-25 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-25 pb-30">
           {data.organisers.map((organisers) => {
             const header = (
               <img
