@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react';
 import { TabMenu } from 'primereact/tabmenu';
 import dynamic from 'next/dynamic';
 // PrimeReact's Galleria relies on browser-specific APIs, so we disable SSR for this component.
-const Galleria = dynamic(() => import('primereact/galleria').then(mod => mod.Galleria), { ssr: false });
+const Galleria = dynamic(
+  () => import('primereact/galleria').then((mod) => mod.Galleria),
+  { ssr: false }
+);
 
 export default function PastEventsSection({ data }) {
   const tabItems = data.galleryInformation.map((item, index) => ({
@@ -29,10 +32,10 @@ export default function PastEventsSection({ data }) {
   );
 
   return (
-    <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)] sm:p-0 relative">
+    <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
       <img
         src={data.icon}
-        className='absolute top-0 right-0 h-40 w-70 opacity-50'
+        className="absolute top-0 right-0 h-40 w-70 opacity-50"
       />
       <h2 className="pt-35 pl-5 text-2xl font-bold sm:text-3xl lg:text-4xl">
         {data.title}
@@ -66,10 +69,10 @@ export default function PastEventsSection({ data }) {
       </div>
 
       <div className="mb-6 flex flex-col gap-6 sm:flex-row">
-        <div className="cut-corners-tr-bl flex justify-start items-center bg-black/70 text-white sm:w-3/5">
+        <div className="cut-corners-tr-bl flex items-center justify-start bg-black/70 text-white sm:w-3/5">
           <p className="m-5 text-white">{selectedYear.description}</p>
         </div>
-        <div className="cut-corners-tl-br flex justify-start items-center bg-black/70 text-white sm:w-2/5">
+        <div className="cut-corners-tl-br flex items-center justify-start bg-black/70 text-white sm:w-2/5">
           <p className="m-5 text-white">{selectedYear.theme}</p>
         </div>
       </div>

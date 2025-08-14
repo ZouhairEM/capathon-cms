@@ -38,7 +38,9 @@ export default function CountdownSection({ data }) {
       className="rounded-lg bg-blue-100 p-6 text-center shadow-lg"
       data-cy="countdown-section"
     >
-      <h2 className="text-2xl font-semibold text-blue-800">Time left until the event</h2>
+      <h2 className="text-2xl font-semibold text-blue-800">
+        Time left until the event
+      </h2>
       <div className="m-auto mt-6 mb-5 grid max-w-lg min-w-xs grid-cols-4 gap-2 md:gap-6">
         {hydrated &&
           Object.entries(timeLeft).map(([unit, value]) => (

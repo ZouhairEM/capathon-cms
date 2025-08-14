@@ -14,9 +14,10 @@ jest.mock('next/dynamic', () => (importFn, options) => {
 jest.mock('primereact/galleria', () => ({
   Galleria: (props) => (
     <div data-testid="galleria-mock">
-      {props.value && props.value.map((img, i) => (
-        <img key={i} src={img.imageSrc} alt={img.alt} />
-      ))}
+      {props.value &&
+        props.value.map((img, i) => (
+          <img key={i} src={img.imageSrc} alt={img.alt} />
+        ))}
     </div>
   ),
 }));
@@ -56,9 +57,7 @@ const mockData = {
       year: '2023',
       description: 'Description 2023',
       theme: 'Theme 2023',
-      images: [
-        { imageSrc: 'img3.jpg', alt: 'img3' },
-      ],
+      images: [{ imageSrc: 'img3.jpg', alt: 'img3' }],
     },
   ],
 };
