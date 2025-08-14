@@ -19,20 +19,23 @@ section {
   @apply inline-block w-full;
 }
 
+.title-block {
+  @apply bg-capathon-primary-variant relative left-[-14%] m-0 flex h-20 w-52 justify-center text-center;
+}
+
 .cut-corners-tl-br {
-  @apply 
-    flex justify-start items-center bg-black/70 text-white
-    [clip-path:polygon(20px_0%,100%_0%,100%_calc(100%-20px),calc(100%-20px)_100%,0%_100%,0%_20px)]
-  ;
+  @apply [clip-path:polygon(20px_0%,100%_0%,100%_calc(100%-20px),calc(100%-20px)_100%,0%_100%,0%_20px)];
 }
 
 .cut-corners-tr-bl {
-  @apply 
-    flex justify-start items-center bg-black/70 text-white
-    [clip-path:polygon(0%_0%,calc(100%-20px)_0%,100%_20px,100%_100%,20px_100%,0%_calc(100%-20px))];
+  @apply [clip-path:polygon(0%_0%,calc(100%-20px)_0%,100%_20px,100%_100%,20px_100%,0%_calc(100%-20px))];
 }
 
 /* Needed for the coloring of the highlighted menu item */
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
   @apply border-black text-black;
+}
+
+.p-card {
+  @apply shadow-none;
 }

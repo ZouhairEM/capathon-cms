@@ -1,3 +1,9 @@
+## [0.2.3] - 2025-08-14
+
+### Added
+
+- Added `OrganiserSection.jsx` that shows the current organisers of the Capathon.
+
 ## [0.2.2] - 2025-07-24
 
 ### Added

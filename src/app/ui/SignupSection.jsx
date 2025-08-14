@@ -7,7 +7,7 @@ export default function SignupSection({ data }) {
   }
 
   return (
-    <section className="text-center">
+    <section className="py-10 text-center">
       <p className="m-auto mb-4 w-2/3">{data.content}</p>
       <Button
         label={
