@@ -24,7 +24,7 @@ export default function OrganiserSection({ data }) {
                 key={organisers.firstName}
                 pt={{
                   root: 'h-53',
-                  body: 'p-0 m-0 text-black title-block cut-corners-tr-bl absolute opacity-50 !h-20',
+                  body: 'p-0 m-0 text-black title-block cut-corners-tr-bl absolute opacity-50 h-20',
                   title: 'top-0 p-0 h-13 content-center font-medium',
                 }}
                 title={

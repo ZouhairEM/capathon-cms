@@ -19,16 +19,8 @@ section {
   @apply inline-block w-full;
 }
 
-@layer base {
-  body .p-card .p-card-body .p-card-title .p-card-content {
-    padding: 0;
-  }
-}
-
-@layer utilities {
-  .title-block {
-    @apply bg-capathon-primary-variant relative left-[-14%] m-0 flex h-24 w-52 justify-center text-center;
-  }
+.title-block {
+  @apply bg-capathon-primary-variant relative left-[-14%] m-0 flex h-20 w-52 justify-center text-center;
 }
 
 .cut-corners-tl-br {
