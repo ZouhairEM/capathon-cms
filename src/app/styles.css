@@ -12,7 +12,7 @@
 
 /* General layout styling */
 main {
-  @apply m-auto max-w-md min-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl;
+  @apply m-auto w-full sm:w-[90%];
 }
 
 section {

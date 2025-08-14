@@ -2,11 +2,13 @@ import { Button } from 'primereact/button';
 
 export default function HeroSection({ data }) {
   return (
-    <div className="bg-black bg-[url(/asfalt-light.png)]">
-      <div className='relative pt-20 pb-10'>
-        <div className="absolute top-0 right-[-2.5rem] py-4 flex flex-col justify-between h-full">
+    <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
+      <img src="/shapes/left-shape.svg" className='absolute left-0 mt-10 w-[10%]'/>
+      <img src="/shapes/right-shape.svg" className='absolute right-0 w-[35%] xl:w-[40%]'/>
+      <div className='relative pt-25 pb-10 overflow-x-clip xl:overflow-x-visible'>
+        <div className="absolute top-0 right-[-1.5rem] md:right-[-2.5rem] py-4 flex flex-col justify-between h-full">
           {[...Array(5)].map((_, i) => (
-            <div key={i} className="w-20 h-20 bg-none border-2 border-capathon-primary rounded-2xl"></div>
+            <div key={i} className="w-12 h-12 md:w-20 md:h-20 bg-none border-2 border-capathon-primary rounded-2xl"></div>
           ))}
         </div>
         <div className="m-auto flex w-3/4 flex-col bg-capathon-surface p-5">
