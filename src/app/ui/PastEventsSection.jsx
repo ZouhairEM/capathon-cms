@@ -37,9 +37,7 @@ export default function PastEventsSection({ data }) {
         src={data.icon}
         className="absolute top-0 right-0 h-40 w-70 opacity-50"
       />
-      <h2 className="section-title-black">
-        {data.title}
-      </h2>
+      <h2 className="section-title-black">{data.title}</h2>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
