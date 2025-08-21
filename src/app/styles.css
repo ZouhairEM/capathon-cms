@@ -8,11 +8,13 @@
   --color-capathon-primary-variant: #ffed86;
   --color-capathon-secondary: #1e1e1e;
   --color-capathon-surface: #d9d9d9;
+
+  --breakpoint-xs: 30rem;
 }
 
 /* General layout styling */
 main {
-  @apply m-auto max-w-md min-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl;
+  @apply m-auto w-full sm:w-[90%];
 }
 
 section {
@@ -29,6 +31,14 @@ section {
 
 .cut-corners-tr-bl {
   @apply [clip-path:polygon(0%_0%,calc(100%-20px)_0%,100%_20px,100%_100%,20px_100%,0%_calc(100%-20px))];
+}
+
+.left-hero-shape {
+  @apply xs:max-w-[20%] absolute left-0 z-50 mt-10 w-[25%] sm:max-w-[15%] md:max-w-[14%] lg:max-w-[12%] xl:max-w-[9%];
+}
+
+.right-hero-shape {
+  @apply absolute right-0 z-50 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
 }
 
 /* Needed for the coloring of the highlighted menu item */

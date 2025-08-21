@@ -1,3 +1,9 @@
+## [0.2.4] - 2025-08-21
+
+### Added
+
+- Updated `HeroSection.jsx` to align with the new design.
+
 ## [0.2.3] - 2025-08-14
 
 ### Added

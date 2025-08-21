@@ -2,30 +2,41 @@ import { Button } from 'primereact/button';
 
 export default function HeroSection({ data }) {
   return (
-    <div className="bg-blue-100 pt-20">
-      <div className="m-auto flex w-3/4 flex-col border border-blue-800 p-5">
-        <p className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
-          {data.titles.title1}
-        </p>
-        <p className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
-          {data.titles.title2}
-        </p>
-        <p className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
-          {data.titles.title3}
-        </p>
-      </div>
+    <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
+      <img src="/shapes/left-shape.svg" className="left-hero-shape" />
+      <img src="/shapes/right-shape.svg" className="right-hero-shape" />
+      <div className="relative overflow-x-clip pt-25 pb-10 xl:overflow-x-visible">
+        <div className="absolute top-0 right-[-1.5rem] flex h-full flex-col justify-between py-4 md:right-[-2.5rem]">
+          {[...Array(5)].map((_, i) => (
+            <div
+              key={i}
+              className="border-capathon-primary h-12 w-12 rounded-2xl border-2 bg-none md:h-20 md:w-20"
+            ></div>
+          ))}
+        </div>
+        <div className="bg-capathon-surface m-auto flex w-3/4 flex-col p-5">
+          <p className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
+            {data.titles.title1}
+          </p>
+          <p className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
+            {data.titles.title2}
+          </p>
+          <p className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
+            {data.titles.title3}
+          </p>
+        </div>
 
-      <div className="m-10 flex justify-center">
-        <Button
-          className="border-blue-800 text-black"
-          outlined
-          icon="pi pi-angle-double-right mr-2"
-        >
-          {data.date}
-        </Button>
+        <div className="mt-10 flex justify-center border-none">
+          <Button
+            className="bg-capathon-primary cut-corners-tr-bl flex h-18 w-48 items-center justify-center gap-2 text-xl text-black opacity-70"
+            outlined
+            icon="pi pi-angle-double-right mr-2"
+          >
+            {data.date}
+          </Button>
+        </div>
       </div>
-
-      <div className="flex flex-row justify-between border border-blue-800 py-10">
+      <div className="bg-capathon-primary flex flex-row justify-between py-10 opacity-70">
         {data.highlights.map((items) => (
           <div
             key={items.text}
