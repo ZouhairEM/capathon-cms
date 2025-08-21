@@ -44,7 +44,7 @@ export default function PastEventsSection({ data }) {
         onTabChange={(e) => setActiveIndex(e.index)}
         className="mx-auto flex max-w-2xl justify-end"
         pt={{
-          action: 'bg-capathon-primary rounded-none',
+          action: 'bg-transparent',
         }}
       />
 
