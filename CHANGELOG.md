@@ -1,3 +1,9 @@
+## [0.2.5] - 2025-08-21
+
+### Added
+
+- Updated `FaqSection.jsx` to align with the new design.
+
 ## [0.2.4] - 2025-08-21
 
 ### Added

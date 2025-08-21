@@ -25,6 +25,14 @@ section {
   @apply bg-capathon-primary-variant relative left-[-14%] m-0 flex h-20 w-52 justify-center text-center;
 }
 
+.section-title-black {
+  @apply ml-10 py-20 text-2xl font-bold text-black sm:text-3xl lg:text-4xl;
+}
+
+.section-title-white {
+  @apply ml-10 py-20 text-2xl font-bold text-white sm:text-3xl lg:text-4xl;
+}
+
 .cut-corners-tl-br {
   @apply [clip-path:polygon(20px_0%,100%_0%,100%_calc(100%-20px),calc(100%-20px)_100%,0%_100%,0%_20px)];
 }

@@ -3,11 +3,9 @@
 export default function CtaSection({ data }) {
   return (
     <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)]">
-      <h1 className="mt-10 ml-10 text-2xl font-bold sm:text-3xl lg:text-4xl">
-        {data.title}
-      </h1>
+      <h1 className="section-title-black">{data.title}</h1>
       <div className="flex flex-col items-end lg:ml-10">
-        <div className="relative mt-20 mb-8 flex w-full flex-row items-center">
+        <div className="relative mt-10 mb-8 flex w-full flex-row items-center">
           <div className="relative flex-1">
             <div className="absolute top-0 left-0 hidden h-[705px] w-1 bg-black lg:block"></div>
             <div className="h-1 w-full bg-black"></div>
