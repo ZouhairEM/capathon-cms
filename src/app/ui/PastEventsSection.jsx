@@ -37,7 +37,7 @@ export default function PastEventsSection({ data }) {
         src={data.icon}
         className="absolute top-0 right-0 h-40 w-70 opacity-50"
       />
-      <h2 className="pt-35 pl-5 text-2xl font-bold sm:text-3xl lg:text-4xl">
+      <h2 className="section-title-black">
         {data.title}
       </h2>
       <TabMenu
