@@ -34,11 +34,11 @@ section {
 }
 
 .left-hero-shape {
-  @apply absolute left-0 mt-10 w-[25%] xs:max-w-[20%] sm:max-w-[15%] md:max-w-[14%] lg:max-w-[12%] xl:max-w-[9%] z-50
+  @apply xs:max-w-[20%] absolute left-0 z-50 mt-10 w-[25%] sm:max-w-[15%] md:max-w-[14%] lg:max-w-[12%] xl:max-w-[9%];
 }
 
 .right-hero-shape {
-  @apply absolute right-0 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%] z-50;
+  @apply absolute right-0 z-50 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
 }
 
 /* Needed for the coloring of the highlighted menu item */
