@@ -3,8 +3,8 @@ import { Button } from 'primereact/button';
 export default function HeroSection({ data }) {
   return (
     <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
-      <img src="/shapes/left-shape.svg" className='absolute left-0 mt-10 w-[10%]'/>
-      <img src="/shapes/right-shape.svg" className='absolute right-0 w-[35%] xl:w-[40%]'/>
+      <img src="/shapes/left-shape.svg" className='left-hero-shape'/>
+      <img src="/shapes/right-shape.svg" className='right-hero-shape'/>
       <div className='relative pt-25 pb-10 overflow-x-clip xl:overflow-x-visible'>
         <div className="absolute top-0 right-[-1.5rem] md:right-[-2.5rem] py-4 flex flex-col justify-between h-full">
           {[...Array(5)].map((_, i) => (
