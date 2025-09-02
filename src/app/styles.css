@@ -61,3 +61,11 @@ section {
 .p-card {
   @apply shadow-none;
 }
+
+body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a > span  {
+  @apply text-white;
+}
+
+body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a:hover > span  {
+  @apply text-[#495057];
+}
