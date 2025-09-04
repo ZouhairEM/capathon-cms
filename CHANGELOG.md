@@ -1,3 +1,9 @@
+## [0.2.6] - 2025-09-04
+
+### Added
+
+- Updated `Navbar.jsx` to align with the new design.
+
 ## [0.2.5] - 2025-08-21
 
 ### Added
