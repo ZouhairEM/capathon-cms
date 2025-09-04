@@ -63,9 +63,13 @@ section {
 }
 
 body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a > span  {
-  @apply text-white;
+  @apply text-[#495057] lg:text-white;
 }
 
 body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a:hover > span  {
+  @apply text-[#495057];
+}
+
+body > nav > div > ul > li:nth-child(1) > div > a > span {
   @apply text-[#495057];
 }
