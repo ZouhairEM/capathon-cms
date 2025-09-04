@@ -27,7 +27,13 @@ export default function Navbar({ data }) {
             className="w-32 md:w-48 lg:w-60"
           />
         }
-        className="flex w-full justify-between bg-blue-700"
+        pt={
+          {
+            root: 'border-none rounded-none',
+            menuitem: 'z-20',
+          }
+        }
+        className="flex w-full justify-between bg-black"
       />
     </nav>
   );

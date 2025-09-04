@@ -42,11 +42,11 @@ section {
 }
 
 .left-hero-shape {
-  @apply xs:max-w-[20%] absolute left-0 z-50 mt-10 w-[25%] sm:max-w-[15%] md:max-w-[14%] lg:max-w-[12%] xl:max-w-[9%];
+  @apply xs:max-w-[20%] absolute left-0 z-10 mt-10 w-[25%] sm:max-w-[15%] md:max-w-[14%] lg:max-w-[12%] xl:max-w-[9%];
 }
 
 .right-hero-shape {
-  @apply absolute right-0 z-50 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
+  @apply absolute right-0 z-10 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
 }
 
 /* Needed for the coloring of the highlighted menu item */
@@ -54,6 +54,18 @@ section {
   @apply border-black text-black;
 }
 
+.p-tabmenu .p-tabmenu-nav {
+  @apply bg-transparent;
+}
+
 .p-card {
   @apply shadow-none;
+}
+
+body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a > span  {
+  @apply text-[#495057] lg:text-white;
+}
+
+body > nav > div > ul > li:not(li.p-menuitem-active.p-highlight) > div > a:hover > span  {
+  @apply text-[#495057];
 }
