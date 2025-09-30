@@ -1,3 +1,9 @@
+## [0.2.7] - 2025-09-30
+
+### Added
+
+- Updated `CountdownSection.jsx` and `SignupSection.jsx` to align with the new design.
+
 ## [0.2.6] - 2025-09-04
 
 ### Added
