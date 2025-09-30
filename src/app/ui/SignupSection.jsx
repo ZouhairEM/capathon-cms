@@ -8,11 +8,11 @@ export default function SignupSection({ data }) {
 
   return (
     <section>
-      <div className='py-10 flex justify-center'>
-        <div className='cut-corners-tl-br bg-capathon-primary flex lg:w-[50%] h-auto justify-center'>
+      <div className="flex justify-center py-10">
+        <div className="cut-corners-tl-br bg-capathon-primary flex h-auto justify-center lg:w-[50%]">
           <p className="m-auto w-2/3 py-4">{data.content}</p>
           <Button
-            className='bg-capathon-secondary border-none'
+            className="bg-capathon-secondary border-none"
             label={
               data.signUpPossible
                 ? data.buttonLabels.label1

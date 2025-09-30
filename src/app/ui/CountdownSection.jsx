@@ -35,7 +35,7 @@ export default function CountdownSection({ data }) {
 
   return (
     <section
-      className="rounded-b-lg bg-capathon-secondary bg-[url(/asfalt-light.png)] px-6 py-10 text-center shadow-lg"
+      className="bg-capathon-secondary rounded-b-lg bg-[url(/asfalt-light.png)] px-6 py-10 text-center shadow-lg"
       data-cy="countdown-section"
     >
       <h2 className="text-2xl font-semibold text-white">
@@ -45,7 +45,7 @@ export default function CountdownSection({ data }) {
         {hydrated &&
           Object.entries(timeLeft).map(([unit, value]) => (
             <Card
-              className="rounded-lg bg-capathon-primary text-capathon-secondary shadow-lg"
+              className="bg-capathon-primary text-capathon-secondary rounded-lg shadow-lg"
               key={unit}
             >
               <span className="text-md block font-bold md:text-xl">
