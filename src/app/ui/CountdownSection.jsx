@@ -35,17 +35,17 @@ export default function CountdownSection({ data }) {
 
   return (
     <section
-      className="rounded-lg bg-blue-100 p-6 text-center shadow-lg"
+      className="bg-capathon-secondary rounded-b-lg bg-[url(/asfalt-light.png)] px-6 py-10 text-center shadow-lg"
       data-cy="countdown-section"
     >
-      <h2 className="text-2xl font-semibold text-blue-800">
+      <h2 className="text-2xl font-semibold text-white">
         Time left until the event
       </h2>
       <div className="m-auto mt-6 mb-5 grid max-w-lg min-w-xs grid-cols-4 gap-2 md:gap-6">
         {hydrated &&
           Object.entries(timeLeft).map(([unit, value]) => (
             <Card
-              className="rounded-lg bg-blue-700 text-white shadow-lg"
+              className="bg-capathon-primary text-capathon-secondary rounded-lg shadow-lg"
               key={unit}
             >
               <span className="text-md block font-bold md:text-xl">
