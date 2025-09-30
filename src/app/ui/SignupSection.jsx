@@ -12,8 +12,8 @@ export default function SignupSection({ data }) {
         <div className="cut-corners-tl-br bg-capathon-primary flex h-auto justify-center xl:w-[50%]">
           <p className="m-auto w-2/3 py-4">{data.content}</p>
           <Button
-            className="bg-capathon-secondary border-none w-28 md:w-40"
-            label={ 
+            className="bg-capathon-secondary w-28 border-none md:w-40"
+            label={
               data.signUpPossible
                 ? data.buttonLabels.label1
                 : data.buttonLabels.label2
