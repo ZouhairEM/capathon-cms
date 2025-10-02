@@ -34,7 +34,7 @@ export default function PastEventsSection({ data }) {
 
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
-      <div className='flex flex-row justify-between pb-10 items-center'>
+      <div className="flex flex-row items-center justify-between pb-10">
         <h2 className="section-title-black ml-10">{data.title}</h2>
         <Barcode />
       </div>
