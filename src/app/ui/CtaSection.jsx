@@ -11,7 +11,7 @@ export default function CtaSection({ data }) {
             <div className="h-1 w-full bg-black"></div>
           </div>
           <div className="cut-corners-tl-br flex h-[118px] w-[80%] items-center justify-start bg-black/70 text-white xl:w-[1018px]">
-            <img className="ml-5" src={data.boxes[0].icon} />
+            <img className="ml-5" src={data.boxes[0].icon} alt={data.boxes[0].alt} />
             <p className="mx-5">{data.boxes[0].text}</p>
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function CtaSection({ data }) {
             <div className="h-1 w-full bg-black"></div>
           </div>
           <div className="cut-corners-tl-br flex h-[118px] w-[70%] items-center justify-start bg-black/70 text-white xl:w-[754px]">
-            <img className="ml-5" src={data.boxes[1].icon} />
+            <img className="ml-5" src={data.boxes[1].icon} alt={data.boxes[1].alt} />
             <p className="mx-5">{data.boxes[1].text}</p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function CtaSection({ data }) {
               <div className="h-1 w-full bg-black"></div>
             </div>
             <div className="cut-corners-tl-br flex h-[118px] w-[60%] items-center justify-start bg-black/70 text-white xl:w-[492px]">
-              <img className="ml-5" src={data.boxes[2].icon} />
+              <img className="ml-5" src={data.boxes[2].icon} alt={data.boxes[2].alt} />
               <p className="mx-5">{data.boxes[2].text}</p>
             </div>
           </div>

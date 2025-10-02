@@ -3,8 +3,8 @@ import { Button } from 'primereact/button';
 export default function HeroSection({ data }) {
   return (
     <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
-      <img src="/shapes/left-shape.svg" className="left-hero-shape" />
-      <img src="/shapes/right-shape.svg" className="right-hero-shape" />
+      <img src="/shapes/left-shape.svg" className="left-hero-shape" alt="" />
+      <img src="/shapes/right-shape.svg" className="right-hero-shape" alt="" />
       <div className="relative overflow-x-clip pt-25 pb-10 xl:overflow-x-visible">
         <div className="absolute top-0 right-[-1.5rem] flex h-full flex-col justify-between py-4 md:right-[-2.5rem]">
           {[...Array(5)].map((_, i) => (
@@ -15,15 +15,15 @@ export default function HeroSection({ data }) {
           ))}
         </div>
         <div className="bg-capathon-surface m-auto flex w-3/4 flex-col p-5">
-          <p className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
+          <h1 className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
             {data.titles.title1}
-          </p>
-          <p className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
+          </h1>
+          <h1 className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
             {data.titles.title2}
-          </p>
-          <p className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
+          </h1>
+          <h1 className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
             {data.titles.title3}
-          </p>
+          </h1>
         </div>
 
         <div className="mt-10 flex justify-center border-none">
@@ -42,7 +42,7 @@ export default function HeroSection({ data }) {
             key={items.text}
             className="flex flex-1 flex-col items-center gap-5"
           >
-            <img src={items.icon} className="h-9 w-9 sm:h-16 sm:w-16" />
+            <img src={items.icon} className="h-9 w-9 sm:h-16 sm:w-16" alt={items.alt} />
             <p className="text-center text-sm">{items.text}</p>
           </div>
         ))}
