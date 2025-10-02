@@ -26,11 +26,11 @@ section {
 }
 
 .section-title-black {
-  @apply ml-10 py-20 text-2xl font-bold text-black sm:text-3xl lg:text-4xl;
+  @apply text-2xl font-bold text-black sm:text-3xl lg:text-4xl;
 }
 
 .section-title-white {
-  @apply ml-10 py-20 text-2xl font-bold text-white sm:text-3xl lg:text-4xl;
+  @apply text-2xl font-bold text-white sm:text-3xl lg:text-4xl;
 }
 
 .cut-corners-tl-br {

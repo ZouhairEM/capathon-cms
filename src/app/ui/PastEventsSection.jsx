@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { TabMenu } from 'primereact/tabmenu';
+import Barcode from './Barcode';
 import dynamic from 'next/dynamic';
 // PrimeReact's Galleria relies on browser-specific APIs, so we disable SSR for this component.
 const Galleria = dynamic(
@@ -33,11 +34,10 @@ export default function PastEventsSection({ data }) {
 
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
-      <img
-        src={data.icon}
-        className="absolute top-0 right-0 h-40 w-70 opacity-50"
-      />
-      <h2 className="section-title-black">{data.title}</h2>
+      <div className='flex flex-row justify-between pb-10 items-center'>
+        <h2 className="section-title-black ml-10">{data.title}</h2>
+        <Barcode />
+      </div>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
