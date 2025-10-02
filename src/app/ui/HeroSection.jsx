@@ -42,7 +42,11 @@ export default function HeroSection({ data }) {
             key={items.text}
             className="flex flex-1 flex-col items-center gap-5"
           >
-            <img src={items.icon} className="h-9 w-9 sm:h-16 sm:w-16" alt={items.alt} />
+            <img
+              src={items.icon}
+              className="h-9 w-9 sm:h-16 sm:w-16"
+              alt={items.alt}
+            />
             <p className="text-center text-sm">{items.text}</p>
           </div>
         ))}
