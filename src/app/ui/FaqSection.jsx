@@ -12,7 +12,10 @@ export default function FaqSection({ data }) {
               header={faq.header}
               key={faq.header}
               pt={{
-                headerAction: 'bg-capathon-primary py-7 text-black',
+                headerAction: {
+                  className: 'bg-capathon-primary py-7 text-black',
+                  "aria-controls": null,
+                },
                 content: 'bg-capathon-primary opacity-70 py-5 text-black',
               }}
             >

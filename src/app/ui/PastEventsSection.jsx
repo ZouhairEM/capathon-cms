@@ -34,8 +34,8 @@ export default function PastEventsSection({ data }) {
 
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
-      <div className="flex flex-row items-center justify-between pb-10">
-        <h2 className="section-title-black ml-10">{data.title}</h2>
+      <div className="flex flex-row items-center justify-between">
+        <h2 id='past-events-heading' className="section-title-black ml-10">{data.title}</h2>
         <Barcode />
       </div>
       <TabMenu
@@ -48,7 +48,7 @@ export default function PastEventsSection({ data }) {
         }}
       />
 
-      <div className="mx-auto mb-6 max-w-2xl">
+      <div className="mx-auto mb-12 max-w-2xl">
         {showGallery && selectedYear?.images?.length > 0 && (
           <Galleria
             value={selectedYear.images}
@@ -59,9 +59,18 @@ export default function PastEventsSection({ data }) {
             showItemNavigatorsOnHover
             className="max-w-full"
             pt={{
-              nextItemButton: 'focus:opacity-100',
-              previousItemButton: 'focus:opacity-100',
-            }}
+              nextItemButton: {
+                className: 'focus:opacity-100',
+                'aria-label': 'Next Image',
+              },
+              previousItemButton: {
+                className: 'focus:opacity-100',
+                'aria-label': 'Previous Image',
+              },
+              root: {
+                'aria-labelledby': 'past-events-heading',
+              }
+          }}
           />
         )}
       </div>

@@ -4,7 +4,6 @@ const Barcode = ({ barCount = 20, minWidth = 2, maxWidth = 8 }) => {
   const [bars, setBars] = useState([]);
 
   useEffect(() => {
-    // Only runs on the client, after mount
     setBars(
       Array.from({ length: barCount }, () => ({
         width: Math.floor(Math.random() * (maxWidth - minWidth + 1)) + minWidth,

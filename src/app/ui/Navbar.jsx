@@ -30,6 +30,12 @@ export default function Navbar({ data }) {
         pt={{
           root: 'border-none rounded-none',
           menuitem: 'z-20',
+          button: {
+            'aria-controls': null,
+          },
+          submenuIcon: {
+            'aria-label': 'Show Submenu',
+          },
         }}
         className="flex w-full justify-between bg-black"
       />
