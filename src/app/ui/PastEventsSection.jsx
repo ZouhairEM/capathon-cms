@@ -35,7 +35,9 @@ export default function PastEventsSection({ data }) {
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
       <div className="flex flex-row items-center justify-between">
-        <h2 id='past-events-heading' className="section-title-black ml-10">{data.title}</h2>
+        <h2 id="past-events-heading" className="section-title-black ml-10">
+          {data.title}
+        </h2>
         <Barcode />
       </div>
       <TabMenu
@@ -69,8 +71,8 @@ export default function PastEventsSection({ data }) {
               },
               root: {
                 'aria-labelledby': 'past-events-heading',
-              }
-          }}
+              },
+            }}
           />
         )}
       </div>

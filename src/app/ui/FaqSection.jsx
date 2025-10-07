@@ -14,7 +14,7 @@ export default function FaqSection({ data }) {
               pt={{
                 headerAction: {
                   className: 'bg-capathon-primary py-7 text-black',
-                  "aria-controls": null,
+                  'aria-controls': null,
                 },
                 content: 'bg-capathon-primary opacity-70 py-5 text-black',
               }}
