@@ -33,6 +33,9 @@ export default function Navbar({ data }) {
           button: {
             'aria-controls': null,
           },
+          submenu: {
+            'role': null,
+          },
           submenuIcon: {
             'aria-label': 'Show Submenu',
           },

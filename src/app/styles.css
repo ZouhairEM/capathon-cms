@@ -49,6 +49,10 @@ section {
   @apply absolute right-0 z-10 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
 }
 
+body > nav > div > ul > li[data-p-highlight="false"] > div > a > span {
+  @apply !text-white;
+}
+
 /* Needed for the coloring of the highlighted menu item */
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
   @apply border-black text-black;
