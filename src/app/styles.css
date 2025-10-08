@@ -49,7 +49,7 @@ section {
   @apply absolute right-0 z-10 w-[55%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] xl:max-w-[25%];
 }
 
-body > nav > div > ul > li[data-p-highlight="false"] > div > a > span {
+body > nav > div > ul > li[data-p-highlight='false'] > div > a > span {
   @apply !text-white;
 }
 
