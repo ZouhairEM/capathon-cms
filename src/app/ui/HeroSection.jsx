@@ -15,13 +15,13 @@ export default function HeroSection({ data }) {
           ))}
         </div>
         <div className="bg-capathon-surface m-auto flex w-3/4 flex-col p-5">
-          <h1 className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
+          <h1 className="mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl font-heading">
             {data.titles.title1}
           </h1>
-          <h1 className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
+          <h1 className="mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl font-heading">
             {data.titles.title2}
           </h1>
-          <h1 className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
+          <h1 className="self-end text-4xl font-bold sm:text-6xl lg:text-8xl font-heading">
             {data.titles.title3}
           </h1>
         </div>

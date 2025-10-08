@@ -53,6 +53,10 @@ body > nav > div > ul > li[data-p-highlight='false'] > div > a > span {
   @apply !text-white;
 }
 
+body > nav > div > ul > li:hover > div > a > span {
+  @apply !text-capathon-secondary;
+}
+
 /* Needed for the coloring of the highlighted menu item */
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
   @apply border-black text-black;
@@ -64,6 +68,10 @@ body > nav > div > ul > li[data-p-highlight='false'] > div > a > span {
 
 .p-card {
   @apply shadow-none;
+}
+
+.font-heading {
+  font-family: var(--font-russo-one), sans-serif;
 }
 
 body

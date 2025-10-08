@@ -35,7 +35,7 @@ export default function PastEventsSection({ data }) {
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
       <div className="flex flex-row items-center justify-between">
-        <h2 id="past-events-heading" className="section-title-black ml-10">
+        <h2 id="past-events-heading" className="section-title-black ml-10 font-heading">
           {data.title}
         </h2>
         <Barcode />
@@ -44,7 +44,7 @@ export default function PastEventsSection({ data }) {
         model={tabItems}
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
-        className="mx-auto flex max-w-2xl justify-end"
+        className="mx-auto flex max-w-2xl justify-end font-heading"
         pt={{
           action: 'bg-transparent text-black hover:bg-capathon-secondary/30',
         }}
