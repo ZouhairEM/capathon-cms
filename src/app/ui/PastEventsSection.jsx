@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { TabMenu } from 'primereact/tabmenu';
+import Barcode from './Barcode';
 import dynamic from 'next/dynamic';
 // PrimeReact's Galleria relies on browser-specific APIs, so we disable SSR for this component.
 const Galleria = dynamic(
@@ -33,22 +34,23 @@ export default function PastEventsSection({ data }) {
 
   return (
     <section className="bg-capathon-primary relative bg-[url(/asfalt-dark.png)] sm:p-0">
-      <img
-        src={data.icon}
-        className="absolute top-0 right-0 h-40 w-70 opacity-50"
-      />
-      <h2 className="section-title-black">{data.title}</h2>
+      <div className="flex flex-row items-center justify-between">
+        <h2 id="past-events-heading" className="section-title-black ml-10">
+          {data.title}
+        </h2>
+        <Barcode />
+      </div>
       <TabMenu
         model={tabItems}
         activeIndex={activeIndex}
         onTabChange={(e) => setActiveIndex(e.index)}
         className="mx-auto flex max-w-2xl justify-end"
         pt={{
-          action: 'bg-transparent',
+          action: 'bg-transparent text-black hover:bg-capathon-secondary/30',
         }}
       />
 
-      <div className="mx-auto mb-6 max-w-2xl">
+      <div className="mx-auto mb-12 max-w-2xl">
         {showGallery && selectedYear?.images?.length > 0 && (
           <Galleria
             value={selectedYear.images}
@@ -59,8 +61,17 @@ export default function PastEventsSection({ data }) {
             showItemNavigatorsOnHover
             className="max-w-full"
             pt={{
-              nextItemButton: 'focus:opacity-100',
-              previousItemButton: 'focus:opacity-100',
+              nextItemButton: {
+                className: 'focus:opacity-100',
+                'aria-label': 'Next Image',
+              },
+              previousItemButton: {
+                className: 'focus:opacity-100',
+                'aria-label': 'Previous Image',
+              },
+              root: {
+                'aria-labelledby': 'past-events-heading',
+              },
             }}
           />
         )}

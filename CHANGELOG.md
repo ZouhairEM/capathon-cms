@@ -1,3 +1,11 @@
+## [0.2.8] - 2025-10-08
+
+### Added
+
+- Resolved accessibility issues.
+- Added `Barcode.jsx` component.
+- Minor styling changes.
+
 ## [0.2.7] - 2025-09-30
 
 ### Added

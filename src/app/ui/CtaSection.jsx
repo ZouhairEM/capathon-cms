@@ -3,7 +3,7 @@
 export default function CtaSection({ data }) {
   return (
     <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)]">
-      <h1 className="section-title-black">{data.title}</h1>
+      <h1 className="section-title-black mx-10 pt-20 pb-10">{data.title}</h1>
       <div className="flex flex-col items-end lg:ml-10">
         <div className="relative mt-10 mb-8 flex w-full flex-row items-center">
           <div className="relative flex-1">
@@ -11,7 +11,11 @@ export default function CtaSection({ data }) {
             <div className="h-1 w-full bg-black"></div>
           </div>
           <div className="cut-corners-tl-br flex h-[118px] w-[80%] items-center justify-start bg-black/70 text-white xl:w-[1018px]">
-            <img className="ml-5" src={data.boxes[0].icon} />
+            <img
+              className="ml-5"
+              src={data.boxes[0].icon}
+              alt={data.boxes[0].alt}
+            />
             <p className="mx-5">{data.boxes[0].text}</p>
           </div>
         </div>
@@ -21,7 +25,11 @@ export default function CtaSection({ data }) {
             <div className="h-1 w-full bg-black"></div>
           </div>
           <div className="cut-corners-tl-br flex h-[118px] w-[70%] items-center justify-start bg-black/70 text-white xl:w-[754px]">
-            <img className="ml-5" src={data.boxes[1].icon} />
+            <img
+              className="ml-5"
+              src={data.boxes[1].icon}
+              alt={data.boxes[1].alt}
+            />
             <p className="mx-5">{data.boxes[1].text}</p>
           </div>
         </div>
@@ -32,7 +40,11 @@ export default function CtaSection({ data }) {
               <div className="h-1 w-full bg-black"></div>
             </div>
             <div className="cut-corners-tl-br flex h-[118px] w-[60%] items-center justify-start bg-black/70 text-white xl:w-[492px]">
-              <img className="ml-5" src={data.boxes[2].icon} />
+              <img
+                className="ml-5"
+                src={data.boxes[2].icon}
+                alt={data.boxes[2].alt}
+              />
               <p className="mx-5">{data.boxes[2].text}</p>
             </div>
           </div>
