@@ -12,7 +12,8 @@
   --breakpoint-xs: 30rem;
 }
 
-body, .p-component {
+body,
+.p-component {
   font-family: var(--font-source-sans-3), sans-serif;
 }
 
