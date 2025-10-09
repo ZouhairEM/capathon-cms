@@ -3,7 +3,13 @@ import 'primeicons/primeicons.css';
 import './styles.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import { PrimeReactProvider } from 'primereact/api';
-import { Russo_One } from 'next/font/google';
+import { Source_Sans_3, Russo_One } from 'next/font/google';
+
+const sourceSans3 = Source_Sans_3({
+  subsets: ['latin'],
+  variable: '--font-source-sans-3',
+  display: 'swap',
+});
 
 const russoOne = Russo_One({
   subsets: ['latin'],
@@ -19,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={russoOne.variable}>
+    <html lang="en" className={`${sourceSans3.variable} ${russoOne.variable}`}>
       <PrimeReactProvider>
         <body>{children}</body>
       </PrimeReactProvider>

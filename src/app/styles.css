@@ -12,7 +12,10 @@
   --breakpoint-xs: 30rem;
 }
 
-/* General layout styling */
+body, .p-component {
+  font-family: var(--font-source-sans-3), sans-serif;
+}
+
 main {
   @apply m-auto w-full sm:w-[90%];
 }
