@@ -3,7 +3,9 @@
 export default function CtaSection({ data }) {
   return (
     <section className="bg-capathon-primary bg-[url(/asfalt-dark.png)]">
-      <h1 className="section-title-black mx-10 pt-20 pb-10">{data.title}</h1>
+      <h1 className="section-title-black font-heading mx-10 pt-20 pb-10">
+        {data.title}
+      </h1>
       <div className="flex flex-col items-end lg:ml-10">
         <div className="relative mt-10 mb-8 flex w-full flex-row items-center">
           <div className="relative flex-1">
@@ -50,8 +52,10 @@ export default function CtaSection({ data }) {
           </div>
           <div className="bg-capathon-surface my-8 h-70 w-[70%] content-center place-self-center border-2 px-2 text-center lg:place-self-end xl:w-[492px]">
             <div>
-              <h1 className="text-4xl">{data.connectBox.ctaLine}</h1>
-              <p className="mt-4">
+              <h1 className="font-heading text-5xl">
+                {data.connectBox.ctaLine}
+              </h1>
+              <p className="mt-4 underline">
                 <a href={`mailto:${data.connectBox.email}`}>
                   {data.connectBox.email}
                 </a>

@@ -1,3 +1,9 @@
+## [0.2.9] - 2025-10-09
+
+### Added
+
+- Changed default font and heading font to align with the new design.
+
 ## [0.2.8] - 2025-10-08
 
 ### Added
