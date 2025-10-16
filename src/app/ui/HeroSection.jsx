@@ -37,8 +37,7 @@ export default function HeroSection({ data }) {
         </div>
       </div>
       <div className="bg-capathon-primary flex flex-row justify-between py-10 opacity-70">
-        {data.highlights.map((items) =>
-        (
+        {data.highlights.map((items) => (
           <div
             key={items.fields.text}
             className="flex flex-1 flex-col items-center gap-5"

@@ -13,10 +13,7 @@ export default function OrganiserSection({ data }) {
         <div className="grid grid-cols-1 justify-items-center gap-25 pb-30 sm:grid-cols-2 md:grid-cols-3">
           {data.organisers.map((organisers) => {
             const { fields } = organisers;
-            const {
-              firstName,
-              lastName,
-            } = fields;
+            const { firstName, lastName } = fields;
             const header = (
               <img
                 alt={`Header image of ${firstName} ${lastName}`}
