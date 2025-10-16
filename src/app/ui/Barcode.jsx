@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Barcode = ({ barCount = 20, minWidth = 2, maxWidth = 8 }) => {
+const Barcode = ({ barCount = 20, minWidth = 2, maxWidth = 18 }) => {
   const [bars, setBars] = useState([]);
 
   useEffect(() => {
