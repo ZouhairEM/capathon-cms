@@ -16,16 +16,14 @@ export default function OrganiserSection({ data }) {
             const {
               firstName,
               lastName,
-              headerImage, // could be an Asset reference or a direct URL/string
             } = fields;
             const header = (
               <img
-                alt={`Header image of ${organisers.fields.firstName} ${organisers.fields.lastName}`}
-                src={organisers.fields.header.fields.file.url}
+                alt={`Header image of ${firstName} ${lastName}`}
+                src={fields.header.fields.file.url}
                 className="h-[10rem] object-cover"
               />
             );
-            console.log('organisers', organisers);
             return (
               <Card
                 key={firstName}

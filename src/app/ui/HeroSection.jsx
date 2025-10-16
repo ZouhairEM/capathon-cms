@@ -1,7 +1,6 @@
 import { Button } from 'primereact/button';
 
 export default function HeroSection({ data }) {
-  console.log('hero', data);
   return (
     <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
       <img src="/shapes/left-shape.svg" className="left-hero-shape" alt="" />
@@ -38,17 +37,18 @@ export default function HeroSection({ data }) {
         </div>
       </div>
       <div className="bg-capathon-primary flex flex-row justify-between py-10 opacity-70">
-        {data.highlights.map((items) => (
+        {data.highlights.map((items) =>
+        (
           <div
             key={items.fields.text}
             className="flex flex-1 flex-col items-center gap-5"
           >
             <img
-              src={items.fields.icon}
+              src={items.fields.icon.fields.file.url}
               className="h-9 w-9 sm:h-16 sm:w-16"
-              alt={items.fields.alt}
+              alt={items.fields.icon.fields.title}
             />
-            <p className="text-center text-sm">{items.text}</p>
+            <p className="text-center text-sm">{items.fields.text}</p>
           </div>
         ))}
       </div>
