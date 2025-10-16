@@ -9,10 +9,10 @@ export default function FaqSection({ data }) {
       </h1>
       <div className="flex justify-center">
         <Accordion className="w-2/3">
-          {data.questions.map((faq) => (
+          {data.faqEntries.map((faq) => (
             <AccordionTab
-              header={faq.header}
-              key={faq.header}
+              header={faq.fields.header}
+              key={faq.fields.header}
               pt={{
                 headerAction: {
                   className: 'bg-capathon-primary py-7 text-black',
@@ -21,7 +21,7 @@ export default function FaqSection({ data }) {
                 content: 'bg-capathon-primary opacity-70 py-5 text-black',
               }}
             >
-              <p>{faq.answer}</p>
+              <p>{faq.fields.answer}</p>
             </AccordionTab>
           ))}
         </Accordion>

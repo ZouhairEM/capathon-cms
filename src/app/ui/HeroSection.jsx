@@ -1,6 +1,7 @@
 import { Button } from 'primereact/button';
 
 export default function HeroSection({ data }) {
+  console.log('hero', data);
   return (
     <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
       <img src="/shapes/left-shape.svg" className="left-hero-shape" alt="" />
@@ -16,13 +17,13 @@ export default function HeroSection({ data }) {
         </div>
         <div className="bg-capathon-surface m-auto flex w-3/4 flex-col p-5">
           <h1 className="font-heading mb-8 self-start text-4xl font-bold sm:text-6xl lg:text-8xl">
-            {data.titles.title1}
+            {data.heroSectionTitleList[0]}
           </h1>
           <h1 className="font-heading mb-8 self-center text-3xl font-bold sm:text-5xl lg:text-6xl">
-            {data.titles.title2}
+            {data.heroSectionTitleList[1]}
           </h1>
           <h1 className="font-heading self-end text-4xl font-bold sm:text-6xl lg:text-8xl">
-            {data.titles.title3}
+            {data.heroSectionTitleList[2]}
           </h1>
         </div>
 
@@ -32,20 +33,20 @@ export default function HeroSection({ data }) {
             outlined
             icon="pi pi-angle-double-right mr-2"
           >
-            {data.date}
+            {data.eventPeriod}
           </Button>
         </div>
       </div>
       <div className="bg-capathon-primary flex flex-row justify-between py-10 opacity-70">
         {data.highlights.map((items) => (
           <div
-            key={items.text}
+            key={items.fields.text}
             className="flex flex-1 flex-col items-center gap-5"
           >
             <img
-              src={items.icon}
+              src={items.fields.icon}
               className="h-9 w-9 sm:h-16 sm:w-16"
-              alt={items.alt}
+              alt={items.fields.alt}
             />
             <p className="text-center text-sm">{items.text}</p>
           </div>

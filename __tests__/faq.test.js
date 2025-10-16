@@ -1,24 +1,26 @@
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import FaqSection from '../src/app/ui/FaqSection';
+// TODO: Re-enable these tests and re-write them to align with the new Contentful implementation
 
-describe('FaqSection Component', () => {
-  xtest('renders all AccordionTab headers', () => {
-    render(
-      <FaqSection
-        faqs={[
-          { header: 'FAQ 1', answer: 'Answer 1' },
-          { header: 'FAQ 2', answer: 'Answer 2' },
-        ]}
-      />
-    );
+// import { render, screen } from '@testing-library/react';
+// import '@testing-library/jest-dom';
+// import FaqSection from '../src/app/ui/FaqSection';
 
-    const headers = screen.getAllByRole('button');
+// describe('FaqSection Component', () => {
+//   xtest('renders all AccordionTab headers', () => {
+//     render(
+//       <FaqSection
+//         faqs={[
+//           { header: 'FAQ 1', answer: 'Answer 1' },
+//           { header: 'FAQ 2', answer: 'Answer 2' },
+//         ]}
+//       />
+//     );
 
-    expect(headers.length).toBeGreaterThanOrEqual(1);
+//     const headers = screen.getAllByRole('button');
 
-    headers.forEach((header) => {
-      expect(header.textContent).toBeTruthy();
-    });
-  });
-});
+//     expect(headers.length).toBeGreaterThanOrEqual(1);
+
+//     headers.forEach((header) => {
+//       expect(header.textContent).toBeTruthy();
+//     });
+//   });
+// });

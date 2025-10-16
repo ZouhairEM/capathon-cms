@@ -10,8 +10,8 @@
     "test:watch": "jest --watch",
     "prepare": "husky",
     "prettier": "prettier --write .",
-    "ut": "jest",
-    "ut:coverage": "jest --coverage"
+    "ut": "jest --passWithNoTests",
+    "ut:coverage": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
     "contentful": "^11.7.6",

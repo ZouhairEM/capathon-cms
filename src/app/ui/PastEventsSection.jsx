@@ -10,8 +10,9 @@ const Galleria = dynamic(
 );
 
 export default function PastEventsSection({ data }) {
+  console.log('past', data);
   const tabItems = data.galleryInformation.map((item, index) => ({
-    label: item.year,
+    label: item.fields.year,
     yearIndex: index,
   }));
 
@@ -24,10 +25,11 @@ export default function PastEventsSection({ data }) {
     setShowGallery(true);
   }, []);
 
+  // TODO: fix links to images
   const itemTemplate = (item) => (
     <img
-      src={item.imageSrc}
-      alt={item.alt}
+      src={item.fields.images[0].fields.file.url}
+      alt={item.fields.images[0].fields.title}
       className="block h-80 w-full sm:h-100"
     />
   );
@@ -82,10 +84,10 @@ export default function PastEventsSection({ data }) {
 
       <div className="mb-6 flex flex-col gap-6 sm:flex-row">
         <div className="cut-corners-tr-bl flex items-center justify-start bg-black/70 text-white sm:w-3/5">
-          <p className="m-5 text-white">{selectedYear.description}</p>
+          <p className="m-5 text-white">{selectedYear.fields.description}</p>
         </div>
         <div className="cut-corners-tl-br flex items-center justify-start bg-black/70 text-white sm:w-2/5">
-          <p className="m-5 text-white">{selectedYear.theme}</p>
+          <p className="m-5 text-white">{selectedYear.fields.theme}</p>
         </div>
       </div>
     </section>
