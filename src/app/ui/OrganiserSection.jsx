@@ -10,7 +10,7 @@ export default function OrganiserSection({ data }) {
         {data.title}
       </h2>
       <div className="mx-auto flex items-center justify-center">
-        <div className="grid grid-cols-1 justify-items-center gap-25 pb-30 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 justify-items-center gap-40 pb-30 sm:grid-cols-2 lg:grid-cols-3">
           {data.organisers.map((organisers) => {
             const { fields } = organisers;
             const { firstName, lastName } = fields;
