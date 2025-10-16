@@ -17,7 +17,7 @@ export default async function Home() {
     faqSection,
     countdownSection,
     signupSection,
-    navbar
+    navbar,
   } = (await getData()) ?? {};
 
   return (

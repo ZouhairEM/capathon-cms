@@ -45,7 +45,7 @@ export default function HeroSection({ data }) {
             <img
               src={items.fields.icon.fields.file.url}
               className="h-9 w-9 sm:h-16 sm:w-16"
-              alt={items.fields.icon.fields.title}
+              alt={items.fields.iconAltText}
             />
             <p className="text-center text-sm">{items.fields.text}</p>
           </div>
