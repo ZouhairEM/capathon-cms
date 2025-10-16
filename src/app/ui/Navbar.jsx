@@ -3,15 +3,15 @@ import { Menubar } from 'primereact/menubar';
 export default function Navbar({ data }) {
   const items = [
     {
-      label: data.dropdownMenu.title,
-      items: data.dropdownMenu.items.map((item) => ({
+      label: data.content.dropdownMenu.title,
+      items: data.content.dropdownMenu.items.map((item) => ({
         label: item.title,
         url: '#', // url: "#past-events" (Remember to add ID to the section)
       })),
     },
     {
       label: 'Sign Up',
-      url: data.signupButton.url,
+      url: data.content.signupButton.url,
       target: '_blank',
     },
   ];
@@ -22,7 +22,7 @@ export default function Navbar({ data }) {
         model={items}
         start={
           <img
-            src={data.logo.url}
+            src={data.content.logo.url}
             alt="Capathon logo"
             className="w-32 md:w-48 lg:w-60"
           />

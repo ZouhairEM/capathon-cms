@@ -38,9 +38,9 @@ export default function CountdownSection({ data }) {
       className="bg-capathon-secondary rounded-b-lg bg-[url(/asfalt-light.png)] px-6 py-10 text-center shadow-lg"
       data-cy="countdown-section"
     >
-      <h2 className="font-heading text-2xl font-semibold text-white">
+      <h3 className="font-heading text-2xl font-semibold text-white">
         Time left until the event
-      </h2>
+      </h3>
       <div className="m-auto mt-6 mb-5 grid max-w-lg min-w-xs grid-cols-4 gap-2 md:gap-6">
         {hydrated &&
           Object.entries(timeLeft).map(([unit, value]) => (
