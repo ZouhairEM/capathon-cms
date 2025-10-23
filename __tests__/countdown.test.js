@@ -30,12 +30,16 @@ describe('Countdown component', () => {
     expect(setIntervalSpy).toHaveBeenCalled();
 
     // capture an initial numeric value (seconds) and then advance timers
-    const secondsBefore = Number(screen.getByText(/Seconds/i).previousSibling.textContent);
+    const secondsBefore = Number(
+      screen.getByText(/Seconds/i).previousSibling.textContent
+    );
 
     // advance fake timers by 3 seconds so the interval callback runs a few times
     jest.advanceTimersByTime(3000);
 
-    const secondsAfter = Number(screen.getByText(/Seconds/i).previousSibling.textContent);
+    const secondsAfter = Number(
+      screen.getByText(/Seconds/i).previousSibling.textContent
+    );
 
     // after advancing time the displayed seconds should have decreased or wrapped
     expect(typeof secondsAfter).toBe('number');
