@@ -2,10 +2,6 @@
 import { Button } from 'primereact/button';
 
 export default function SignupSection({ data }) {
-  function handleSignUp() {
-    console.log('Clicked!');
-  }
-
   return (
     <section>
       <div className="flex justify-center py-10">
@@ -20,7 +16,6 @@ export default function SignupSection({ data }) {
                 ? data.signupButtonLabels[0]
                 : data.signupButtonLabels[1]
             }
-            onClick={handleSignUp}
             disabled={!data.signupPossible}
           />
         </div>

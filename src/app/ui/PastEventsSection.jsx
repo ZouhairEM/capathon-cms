@@ -16,7 +16,7 @@ export default function PastEventsSection({ data }) {
   }));
 
   const [showGallery, setShowGallery] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(2);
   const selectedYear = data.galleryInformation[activeIndex].fields;
 
   useEffect(() => {
