@@ -39,8 +39,6 @@ describe('Countdown component', () => {
       screen.getByText(/Seconds/i).previousSibling.textContent
     );
 
-    console.log('Seconds before advancing time:', secondsBefore);
-
     // advance fake timers by 3 seconds so the interval callback runs a few times
     act(() => {
       jest.advanceTimersByTime(3000);
@@ -49,8 +47,6 @@ describe('Countdown component', () => {
     const secondsAfter = Number(
       screen.getByText(/Seconds/i).previousSibling.textContent
     );
-
-    console.log('Seconds after advancing time:', secondsAfter);
 
     // after advancing time the displayed seconds should have decreased or wrapped
     expect(typeof secondsAfter).toBe('number');

@@ -1,3 +1,11 @@
+## [0.3.0] - 2025-11-10
+
+### Added
+
+- Implemented Content Models from Contentful.
+- Resolved last accessibility issues/alerts.
+- Increased unit test coverage.
+
 ## [0.2.9] - 2025-10-09
 
 ### Added
