@@ -9,29 +9,28 @@ import { getData } from './service/FetchData/FetchData';
 import PastEventsSection from './ui/PastEventsSection';
 
 export default async function Home() {
-  const data = await getData();
-  const [
-    heroData,
-    pastEventsData,
-    ctaData,
-    organisersSection,
+  const {
+    heroSection,
+    pastEventsSection,
+    ctaSection,
+    organiserSection,
     faqSection,
-    countdownData,
-    signUpData,
-  ] = data.sections;
-  const { navbar } = data;
+    countdownSection,
+    signupSection,
+    navbar,
+  } = (await getData()) ?? {};
 
   return (
     <>
       <Navbar data={navbar} />
       <main>
-        <HeroSection data={heroData.hero} />
-        <PastEventsSection data={pastEventsData.pastEvents} />
-        <CtaSection data={ctaData.cta} />
-        <OrganiserSection data={organisersSection.orgSection} />
-        <FaqSection data={faqSection.faqs} />
-        <CountdownSection data={countdownData.countdown} />
-        <SignupSection data={signUpData.signUp} />
+        <HeroSection data={heroSection} />
+        <PastEventsSection data={pastEventsSection} />
+        <CtaSection data={ctaSection} />
+        <OrganiserSection data={organiserSection} />
+        <FaqSection data={faqSection} />
+        <CountdownSection data={countdownSection} />
+        <SignupSection data={signupSection} />
       </main>
     </>
   );

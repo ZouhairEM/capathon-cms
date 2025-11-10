@@ -11,13 +11,13 @@ const Galleria = dynamic(
 
 export default function PastEventsSection({ data }) {
   const tabItems = data.galleryInformation.map((item, index) => ({
-    label: item.year,
+    label: item.fields.year,
     yearIndex: index,
   }));
 
   const [showGallery, setShowGallery] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(1);
-  const selectedYear = data.galleryInformation[activeIndex];
+  const [activeIndex, setActiveIndex] = useState(2);
+  const selectedYear = data.galleryInformation[activeIndex].fields;
 
   useEffect(() => {
     // Only render Galleria on the client
@@ -26,8 +26,8 @@ export default function PastEventsSection({ data }) {
 
   const itemTemplate = (item) => (
     <img
-      src={item.imageSrc}
-      alt={item.alt}
+      src={item.fields.file.url}
+      alt={item.fields.title}
       className="block h-80 w-full sm:h-100"
     />
   );

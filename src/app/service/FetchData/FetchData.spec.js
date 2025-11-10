@@ -1,40 +1,67 @@
-const mockGetEntry = jest.fn();
+const { getData } = require('./FetchData');
+const client = require('../InitializeClient/InitializeClient');
 
 jest.mock('../InitializeClient/InitializeClient', () => ({
-  default: { getEntry: mockGetEntry },
+  default: {
+    getEntries: jest.fn(),
+  },
 }));
 
-const { getData } = require('./FetchData');
-
 describe('getData', () => {
-  const OLD_ENV = process.env;
+  it('should return formatted data grouped by sectionName', async () => {
+    const mockResponse = {
+      items: [
+        {
+          sys: { id: '1' },
+          fields: { sectionName: 'Section1', data: 'Data1' },
+        },
+        {
+          sys: { id: '2' },
+          fields: { sectionName: 'Section2', data: 'Data2' },
+        },
+      ],
+    };
 
-  beforeEach(() => {
-    jest.clearAllMocks();
-    process.env = { ...OLD_ENV, CONTENTFUL_ENTRY_ID: 'mock_entry_id' };
-  });
-
-  afterEach(() => {
-    process.env = OLD_ENV;
-  });
-
-  it('returns db.data when client.getEntry resolves', async () => {
-    const mockData = { fields: { db: { data: { foo: 'bar' } } } };
-    mockGetEntry.mockResolvedValueOnce(mockData);
+    client.default.getEntries.mockResolvedValue(mockResponse);
 
     const result = await getData();
-    expect(mockGetEntry).toHaveBeenCalledWith('mock_entry_id');
-    expect(result).toEqual({ foo: 'bar' });
+
+    expect(result).toEqual({
+      Section1: { id: '1', sectionName: 'Section1', data: 'Data1' },
+      Section2: { id: '2', sectionName: 'Section2', data: 'Data2' },
+    });
   });
 
-  it('logs error when client.getEntry throws', async () => {
-    const error = new Error('fail');
-    mockGetEntry.mockRejectedValueOnce(error);
-    const consoleSpy = jest
-      .spyOn(console, 'error')
-      .mockImplementation(() => {});
-    await getData();
-    expect(consoleSpy).toHaveBeenCalledWith(error);
-    consoleSpy.mockRestore();
+  it('should filter out entries without sectionName', async () => {
+    const mockResponse = {
+      items: [
+        {
+          sys: { id: '1' },
+          fields: { sectionName: 'Section1', data: 'Data1' },
+        },
+        {
+          sys: { id: '2' },
+          fields: { data: 'Data2' },
+        },
+      ],
+    };
+
+    client.default.getEntries.mockResolvedValue(mockResponse);
+
+    const result = await getData();
+
+    expect(result).toEqual({
+      Section1: { id: '1', sectionName: 'Section1', data: 'Data1' },
+    });
+  });
+
+  it('should return an empty object if no entries are present', async () => {
+    const mockResponse = { items: [] };
+
+    client.default.getEntries.mockResolvedValue(mockResponse);
+
+    const result = await getData();
+
+    expect(result).toEqual({});
   });
 });

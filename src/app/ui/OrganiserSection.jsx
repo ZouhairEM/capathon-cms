@@ -6,22 +6,24 @@ import { Card } from 'primereact/card';
 export default function OrganiserSection({ data }) {
   return (
     <div className="bg-capathon-secondary bg-[url(/asfalt-light.png)]">
-      <h1 className="section-title-white font-heading mx-10 py-20">
+      <h2 className="section-title-white font-heading mx-10 py-20">
         {data.title}
-      </h1>
+      </h2>
       <div className="mx-auto flex items-center justify-center">
-        <div className="grid grid-cols-1 justify-items-center gap-25 pb-30 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 justify-items-center gap-40 pb-30 sm:grid-cols-2 lg:grid-cols-3">
           {data.organisers.map((organisers) => {
+            const { fields } = organisers;
+            const { firstName, lastName } = fields;
             const header = (
               <img
-                alt="Card"
-                src={organisers.header}
+                alt={`Header image of ${firstName} ${lastName}`}
+                src={fields.header.fields.file.url}
                 className="h-[10rem] object-cover"
               />
             );
             return (
               <Card
-                key={organisers.firstName}
+                key={firstName}
                 pt={{
                   root: 'h-53',
                   body: 'p-0 m-0 text-black title-block cut-corners-tr-bl absolute opacity-50 h-20',
@@ -29,9 +31,9 @@ export default function OrganiserSection({ data }) {
                 }}
                 title={
                   <span className="left[-15%] relative flex items-center justify-center text-center font-sans text-[1rem]">
-                    {organisers.firstName}
+                    {firstName}
                     <br></br>
-                    {organisers.lastName}
+                    {lastName}
                   </span>
                 }
                 header={header}
